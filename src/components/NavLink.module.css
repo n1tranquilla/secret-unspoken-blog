@@ -1,0 +1,19 @@
+.nav-link {
+    padding: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-link:visited {
+    text-decoration: none;
+    color: inherit;
+}
