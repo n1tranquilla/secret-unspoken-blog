@@ -1,7 +1,10 @@
 import React from 'react'
-import Header from './Header'
+import DesktopHeader from './DesktopHeader'
+import MobileHeader from './MobileHeader'
+import MobileFooter from './MobileFooter'
 import Helmet from 'react-helmet'
 import { graphql, StaticQuery } from 'gatsby'
+import Hidden from '@material-ui/core/Hidden'
 
 import styles from './Layout.module.css'
 
@@ -17,16 +20,24 @@ const Layout = props => (
             }`
         }
         render={data => (
-            <div>
+            <React.Fragment>
                 <Helmet>
                     <title>{data.site.siteMetadata.title}</title>   
                     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
                 </Helmet>
-                <Header title={data.site.siteMetadata.title}/>
+                <Hidden smDown>
+                    <DesktopHeader title={data.site.siteMetadata.title}/>
+                </Hidden>
+                <Hidden mdUp>
+                    <MobileHeader title={data.site.siteMetadata.title}/>
+                </Hidden>
                 <div className={styles.layout}>
                     { props.children }
                 </div>
-            </div>
+                <Hidden mdUp>
+                    <MobileFooter />
+                </Hidden>
+            </React.Fragment>
         )}
     />
     
