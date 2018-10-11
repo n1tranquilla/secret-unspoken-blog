@@ -23,7 +23,7 @@ const Layout = props => (
             <React.Fragment>
                 <Helmet>
                     <title>{data.site.siteMetadata.title}</title>   
-                    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+                    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Nunito" rel="stylesheet"/>
                 </Helmet>
                 <Hidden smDown>
                     <DesktopHeader title={data.site.siteMetadata.title}/>
