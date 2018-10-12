@@ -2,9 +2,9 @@ import React from 'react'
 import { Link } from 'gatsby'
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import Blog from '@material-ui/icons/ChatBubble'
-import Me from '@material-ui/icons/Person'
-import About from '@material-ui/icons/LiveHelp'
+import Blog from '@material-ui/icons/List'
+import Me from '@material-ui/icons/PersonOutline'
+import About from '@material-ui/icons/HelpOutline'
 
 import styles from './MobileFooter.module.css'
 
@@ -24,9 +24,9 @@ class MobileFooter extends React.Component {
                 value={this.state.value}
                 onChange={this.handleChange}
                 showLabels>
-                <BottomNavigationAction label="Blog" icon={<Blog />} component={Link} to="/blog"/>
-                <BottomNavigationAction label="About" icon={<About />} component={Link} to="/about"/>
-                <BottomNavigationAction label="Me" icon={<Me />} component={Link} to="/me"/>
+                <BottomNavigationAction classes={{selected: styles.selected}} label="Posts" icon={<Blog />} component={Link} to="/posts"/>
+                <BottomNavigationAction classes={{selected: styles.selected}} label="Why" icon={<About />} component={Link} to="/why"/>
+                <BottomNavigationAction classes={{selected: styles.selected}} label="Me" icon={<Me />} component={Link} to="/me"/>
             </BottomNavigation>
         
         )

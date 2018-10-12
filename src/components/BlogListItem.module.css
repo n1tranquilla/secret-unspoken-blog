@@ -1,0 +1,31 @@
+.blog-list-item {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 100%;
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.date {
+    color: grey;
+    font-size: small;
+}
+
+.title {
+    color: black;
+}
+
+.excerpt {
+    font-size: small;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
