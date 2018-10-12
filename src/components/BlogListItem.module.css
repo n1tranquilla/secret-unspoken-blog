@@ -17,11 +17,15 @@
     font-size: small;
 }
 
+.title {
+    color: black;
+}
+
 .excerpt {
     font-size: small;
 }
 
-.title {
+.link {
     text-decoration: none;
     color: black;
 }
