@@ -4,9 +4,24 @@
     font-family: 'Nunito', sans-serif;
 }
 
-h1 {
+#___gatsby {
+    height: 100vh;
+}
+#___gatsby > div {
+    height: 100%;
+}
+
+h1, h2, h3 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 100;
     font-size: 40px;
     color: black;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
 }

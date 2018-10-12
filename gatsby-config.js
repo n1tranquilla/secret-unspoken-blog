@@ -1,8 +1,17 @@
 module.exports = {
   siteMetadata: {
     title: 'Secret Unspoken',
+    subtitle: 'Talking about the secret most men have but won\'t share'
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
+    `gatsby-transformer-remark`,
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,

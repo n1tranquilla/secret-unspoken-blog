@@ -16,8 +16,8 @@ const Layout = props => (
                 siteMetadata {
                     title
                 }
-                }
-            }`
+            }
+        }`
         }
         render={data => (
             <React.Fragment>

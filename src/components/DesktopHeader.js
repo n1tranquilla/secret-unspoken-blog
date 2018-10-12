@@ -13,8 +13,8 @@ const DesktopHeader = props => (
             </Link>
         </div>
         <div className={styles.navRight}>
-            <NavLink to="/blog">Blog</NavLink>
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="/posts">Posts</NavLink>
+            <NavLink to="/why">Why</NavLink>
             <NavLink to="/me">Me</NavLink>
         </div>
     </nav>

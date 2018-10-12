@@ -24,8 +24,8 @@ class MobileFooter extends React.Component {
                 value={this.state.value}
                 onChange={this.handleChange}
                 showLabels>
-                <BottomNavigationAction label="Blog" icon={<Blog />} component={Link} to="/blog"/>
-                <BottomNavigationAction label="About" icon={<About />} component={Link} to="/about"/>
+                <BottomNavigationAction label="Posts" icon={<Blog />} component={Link} to="/posts"/>
+                <BottomNavigationAction label="Why" icon={<About />} component={Link} to="/why"/>
                 <BottomNavigationAction label="Me" icon={<Me />} component={Link} to="/me"/>
             </BottomNavigation>
         
