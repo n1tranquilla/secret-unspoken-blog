@@ -6,6 +6,9 @@
     
     padding: 1em;
     width: calc(100%-2em);
+
+    background-color: var(--primary-color);
+    border-top: 1em solid var(--primary-color-dark);
 }
 
 .nav-left,

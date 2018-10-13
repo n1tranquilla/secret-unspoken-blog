@@ -6,5 +6,5 @@
 }
 
 .selected > *{
-    color: black;
+    color: var(--primary-color);
 }

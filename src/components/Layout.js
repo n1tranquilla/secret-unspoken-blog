@@ -15,6 +15,7 @@ const Layout = props => (
                 site {
                 siteMetadata {
                     title
+                    subtitle
                 }
             }
         }`
@@ -26,10 +27,16 @@ const Layout = props => (
                     <link href="https://fonts.googleapis.com/css?family=Unica+One|Spectral|Karla" rel="stylesheet"/>
                 </Helmet>
                 <Hidden smDown>
-                    <DesktopHeader title={data.site.siteMetadata.title}/>
+                    <DesktopHeader 
+                        title={data.site.siteMetadata.title}
+                        subtitle={data.site.siteMetadata.subtitle}
+                    />
                 </Hidden>
                 <Hidden mdUp>
-                    <MobileHeader title={data.site.siteMetadata.title}/>
+                    <MobileHeader 
+                        title={data.site.siteMetadata.title}
+                        subtitle={data.site.siteMetadata.subtitle}
+                    />
                 </Hidden>
                 <div className={styles.layout}>
                     { props.children }
