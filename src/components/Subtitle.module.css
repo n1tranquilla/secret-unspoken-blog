@@ -1,3 +1,5 @@
 .subtitle {
-    padding: 0.5em;
+    padding: 2em;
+    background-color: var(--secondary-color-light);
+    width: calc(100% - 4em);
 }

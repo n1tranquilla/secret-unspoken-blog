@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Column from '../components/Column'
 import DateOfPost from '../components/DateOfPost'
+import "github-markdown-css"
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -11,7 +12,7 @@ export default ({ data }) => {
         <Column>
             <DateOfPost prefix="Last Modified: ">{post.frontmatter.date}</DateOfPost>
             <h2>{post.frontmatter.title}</h2>
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <div className="markdown-body" dangerouslySetInnerHTML={{ __html: post.html }} />
         </Column>
     </Layout>
   )

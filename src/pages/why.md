@@ -15,3 +15,5 @@ But why here? In my experience, the kind of issues I will be discussing here are
 * or not being dealt with effectively, due to lack of experience with lasting change.
 
 My hope is that this blog will play a part in enabling men to talk about their sexual issues honestly with other men, in a way that builds community, dissipates the shame, and leads to person freedom.
+
+Let's [begin the discussion](/posts)
