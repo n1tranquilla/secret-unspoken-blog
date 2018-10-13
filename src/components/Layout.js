@@ -4,6 +4,7 @@ import MobileHeader from './MobileHeader'
 import MobileFooter from './MobileFooter'
 import Helmet from 'react-helmet'
 import CopyrightNotice from './CopyrightNotice'
+import { Location } from '@reach/router'
 
 import { graphql, StaticQuery } from 'gatsby'
 import Hidden from '@material-ui/core/Hidden'
@@ -46,7 +47,9 @@ const Layout = props => (
                 </div>
                 <CopyrightNotice/>
                 <Hidden mdUp>
-                    <MobileFooter />
+                    <Location>
+                        { ({ location }) => <MobileFooter location={location}/> }
+                    </Location>
                 </Hidden>
             </React.Fragment>
         )}

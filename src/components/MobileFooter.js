@@ -6,15 +6,34 @@ import Blog from '@material-ui/icons/List'
 import Me from '@material-ui/icons/PersonOutline'
 import About from '@material-ui/icons/HelpOutline'
 
+import { head, reject, isEmpty, split, compose } from 'ramda'
+
 import styles from './MobileFooter.module.css'
+
+const getHeadPathname = compose(
+    head,
+    reject(isEmpty),
+    split('/')
+)
+
+const pageToIndexMap={
+    posts: 0,
+    why: 1,
+    me: 2
+}
 
 class MobileFooter extends React.Component {
     state = {
-        value: 0,
+        value: null,
     }
     
     handleChange = (event, value) => {
         this.setState({ value })
+    }
+
+    componentDidMount(){
+        const topLevelPage = getHeadPathname(this.props.location.pathname)
+        this.setState({ value: pageToIndexMap[topLevelPage] })
     }
 
     render(){
