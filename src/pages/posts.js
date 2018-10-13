@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import Column from '../components/Column'
 import BlogListItem from '../components/BlogListItem'
+import { graphql } from 'gatsby'
 
 const PostsPage = props => (
     <Layout>

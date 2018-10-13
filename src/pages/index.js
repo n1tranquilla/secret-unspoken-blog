@@ -2,15 +2,17 @@ import React from 'react'
 import Layout from '../components/Layout'
 import BlogListItem from '../components/BlogListItem'
 import Column from '../components/Column'
-import Subtitle from '../components/Subtitle'
 import { graphql } from 'gatsby'
+import TotalCount from '../components/TotalCount'
 
 import './index.css'
+import SplashSection from '../components/SplashSection';
 
 const IndexPage = (props) => (
   <Layout>
     <Column>
-      <Subtitle>{props.data.site.siteMetadata.subtitle}</Subtitle>
+      <SplashSection subtitle={props.data.site.siteMetadata.subtitle} />
+      <TotalCount count={props.data.allMarkdownRemark.totalCount}/>
       { props.data.allMarkdownRemark.edges.map(({ node })=>(
         <BlogListItem 
           to={node.fields.slug}
