@@ -9,11 +9,13 @@
     "classnames": "^2.2.6",
     "gatsby": "^2.0.19",
     "gatsby-cli": "^2.4.3",
+    "gatsby-plugin-favicon": "^3.1.4",
     "gatsby-plugin-manifest": "^2.0.5",
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-source-filesystem": "^2.0.3",
     "gatsby-transformer-remark": "^2.1.7",
+    "gh-pages": "^2.0.1",
     "ramda": "^0.25.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
@@ -27,7 +29,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "deploy": "rm -rf node_modules/gh-pages/.cache && gatsby build --prefix-paths && gh-pages -o target -d public -b master",
+    "deploy": "rm -rf node_modules/gh-pages/.cache && gatsby build && gh-pages -o target -d public -b master",
     "dev-m": "gatsby develop -H 0.0.0.0 -p 8000"
   },
   "devDependencies": {
