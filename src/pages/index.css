@@ -1,7 +1,7 @@
 * {
     margin:0;
     padding: 0;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Karla', sans-serif;
 }
 
 #___gatsby {
@@ -11,10 +11,16 @@
     height: 100%;
 }
 
-h1, h2, h3 {
-    font-family: 'Cormorant Garamond', serif;
+h1 {
+    font-family: 'Unica One', cursive;
     font-weight: 100;
     font-size: 40px;
+    color: black;
+}
+
+h2, h3, h4 {
+    font-family: 'Spectral', serif;
+    font-weight: 100;
     color: black;
 }
 
@@ -24,4 +30,8 @@ h2 {
 
 h3 {
     font-size: 20px;
+}
+
+h4 {
+    font-family: 'Karla', sans-serif;
 }

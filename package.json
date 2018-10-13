@@ -36,6 +36,8 @@
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   },
   "scripts":{
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "rm -rf node_modules/gh-pages/.cache && gatsby build --prefix-paths && gh-pages -d public",
+    "dev-m": "./node_modules/.bin/gatsby develop -H 0.0.0.0 -p 8000",
+    "develop": "./node_modules/.bin/gatsby develop"
   }
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Subtitle.module.css'
 
 const Subtitle = props => (
-    <h3 className={styles.subtitle}>{props.children}</h3>
+    <h4 className={styles.subtitle}>{props.children}</h4>
 )
 
 export default Subtitle
