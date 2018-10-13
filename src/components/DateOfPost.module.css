@@ -1,4 +1,5 @@
 .date {
     font-size: small;
-    color: var(--secondary-color)
+    color: black;
+    opacity: 0.75;
 }

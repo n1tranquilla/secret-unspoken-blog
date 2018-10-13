@@ -28,7 +28,8 @@ const Layout = props => (
             <React.Fragment>
                 <Helmet>
                     <title>{data.site.siteMetadata.title}</title>   
-                    <link href="https://fonts.googleapis.com/css?family=Unica+One|Spectral|Karla" rel="stylesheet"/>
+                    <link href="https://fonts.googleapis.com/css?family=Unica+One&text=Secret%20Unspoken" rel="stylesheet" />
+                    <link href="https://fonts.googleapis.com/css?family=Spectral|Karla" rel="stylesheet"/>
                 </Helmet>
                 <Hidden smDown>
                     <DesktopHeader 
