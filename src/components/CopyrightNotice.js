@@ -4,7 +4,7 @@ import styles from './CopyrightNotice.module.css'
 
 const CopyrightNotice = props => (
     <div className={styles.copyright}>
-        Nathan Tranquilla © {(new Date()).getFullYear()}
+        Secret Unspoken © {(new Date()).getFullYear()}
     </div>
 )
 
