@@ -30,6 +30,8 @@ const Layout = props => (
                     <title>{data.site.siteMetadata.title}</title>   
                     <link href="https://fonts.googleapis.com/css?family=Unica+One&text=Secret%20Unspoken" rel="stylesheet" />
                     <link href="https://fonts.googleapis.com/css?family=Spectral|Karla" rel="stylesheet"/>
+                    <meta name="Description" content="A blog about men's sexuality and sexual addiction"/>
+                    <html lang="en" />
                 </Helmet>
                 <Hidden smDown>
                     <DesktopHeader 
