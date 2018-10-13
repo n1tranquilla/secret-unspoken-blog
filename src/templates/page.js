@@ -9,7 +9,7 @@ export default ({ data }) => {
   return (
     <Layout>
         <Column>
-            <DateOfPost>{post.frontmatter.date}</DateOfPost>
+            <DateOfPost prefix="Last Modified: ">{post.frontmatter.date}</DateOfPost>
             <h2>{post.frontmatter.title}</h2>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </Column>

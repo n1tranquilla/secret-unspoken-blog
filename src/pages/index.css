@@ -43,3 +43,8 @@ h3 {
 h4 {
     font-family: 'Karla', sans-serif;
 }
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}

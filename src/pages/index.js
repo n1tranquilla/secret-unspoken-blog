@@ -32,7 +32,7 @@ export const query = graphql`
         subtitle
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(filter: { frontmatter: { type: { eq:"post" } } }, sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
