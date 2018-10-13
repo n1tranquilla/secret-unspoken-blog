@@ -3,10 +3,13 @@ import DesktopHeader from './DesktopHeader'
 import MobileHeader from './MobileHeader'
 import MobileFooter from './MobileFooter'
 import Helmet from 'react-helmet'
+import CopyrightNotice from './CopyrightNotice'
+
 import { graphql, StaticQuery } from 'gatsby'
 import Hidden from '@material-ui/core/Hidden'
 
 import styles from './Layout.module.css'
+
 
 const Layout = props => (
     <StaticQuery
@@ -41,6 +44,7 @@ const Layout = props => (
                 <div className={styles.layout}>
                     { props.children }
                 </div>
+                <CopyrightNotice/>
                 <Hidden mdUp>
                     <MobileFooter />
                 </Hidden>

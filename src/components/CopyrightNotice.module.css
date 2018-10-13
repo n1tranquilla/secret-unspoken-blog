@@ -1,0 +1,9 @@
+.copyright {
+    color: var(--secondary-color-dark);
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+}
