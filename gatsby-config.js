@@ -26,6 +26,5 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-  ],
-  pathPrefix: "/secret-unspoken-blog",
+  ]
 }
