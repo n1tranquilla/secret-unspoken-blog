@@ -4,8 +4,7 @@ import BlogListItem from '../components/BlogListItem'
 import Column from '../components/Column'
 import { graphql } from 'gatsby'
 import TotalCount from '../components/TotalCount'
-
-import SplashSection from '../components/SplashSection';
+import SplashSection from '../components/SplashSection'
 
 const IndexPage = (props) => (
   <Layout>
