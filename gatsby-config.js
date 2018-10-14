@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Secret Unspoken',
-    subtitle: 'Talking about the secret most men have but won\'t share'
+    subtitle: 'Talking about the secret most men have but won\'t share',
+    shortname: 'secret-unspoken'
   },
   plugins: [
     {
