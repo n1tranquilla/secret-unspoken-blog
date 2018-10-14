@@ -4,7 +4,6 @@ import Layout from "../components/Layout"
 import Column from '../components/Column'
 import DateOfPost from '../components/DateOfPost'
 import Disqus from 'disqus-react'
-import "github-markdown-css"
 
 export default ({ data, location }) => {
   const siteMeta = data.site.siteMetadata

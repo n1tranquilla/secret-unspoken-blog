@@ -1,24 +1,16 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import BlogListItem from '../components/BlogListItem'
 import Column from '../components/Column'
 import { graphql } from 'gatsby'
-import TotalCount from '../components/TotalCount'
-import SplashSection from '../components/SplashSection'
+import GetStarted from '../components/GetStarted'
+import Subtitle from '../components/Subtitle'
 
 const IndexPage = (props) => (
   <Layout>
     <Column>
-      <SplashSection subtitle={props.data.site.siteMetadata.subtitle} />
-      <TotalCount count={props.data.allMarkdownRemark.totalCount}/>
-      { props.data.allMarkdownRemark.edges.map(({ node })=>(
-        <BlogListItem 
-          to={node.fields.slug}
-          title={node.frontmatter.title} 
-          date={node.frontmatter.date} 
-          excerpt={node.excerpt}
-        />
-      )) }
+      <Subtitle >{props.data.site.siteMetadata.subtitle}</Subtitle>
+      <div className="markdown-body" dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
+      <GetStarted />
     </Column>
   </Layout>
 )
@@ -32,20 +24,8 @@ export const query = graphql`
         subtitle
       }
     }
-    allMarkdownRemark(filter: { frontmatter: { type: { eq:"post" } } }, sort: { fields: [frontmatter___date], order: DESC }) {
-      totalCount
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            date(formatString: "DD MMMM, YYYY")
-          }
-          excerpt
-        }
-      }
+    markdownRemark(frontmatter: { title: { eq: "mission" } }) {
+      html
     }
   }
 `

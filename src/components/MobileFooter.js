@@ -4,7 +4,7 @@ import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import Blog from '@material-ui/icons/List'
 import Me from '@material-ui/icons/PersonOutline'
-import About from '@material-ui/icons/HelpOutline'
+import Home from '@material-ui/icons/HomeOutlined'
 
 import { head, reject, isEmpty, split, compose } from 'ramda'
 
@@ -17,8 +17,8 @@ const getHeadPathname = compose(
 )
 
 const pageToIndexMap={
-    posts: 0,
-    why: 1,
+    home: 0,
+    posts: 1,
     me: 2
 }
 
@@ -33,7 +33,7 @@ class MobileFooter extends React.Component {
 
     componentDidMount(){
         const topLevelPage = getHeadPathname(this.props.location.pathname)
-        this.setState({ value: pageToIndexMap[topLevelPage] })
+        this.setState({ value: pageToIndexMap[topLevelPage] || 0 })
     }
 
     render(){
@@ -43,8 +43,8 @@ class MobileFooter extends React.Component {
                 value={this.state.value}
                 onChange={this.handleChange}
                 showLabels>
+                <BottomNavigationAction classes={{selected: styles.selected}} label="Home" icon={<Home />} component={Link} to="/"/>
                 <BottomNavigationAction classes={{selected: styles.selected}} label="Posts" icon={<Blog />} component={Link} to="/posts"/>
-                <BottomNavigationAction classes={{selected: styles.selected}} label="Why" icon={<About />} component={Link} to="/why"/>
                 <BottomNavigationAction classes={{selected: styles.selected}} label="Me" icon={<Me />} component={Link} to="/me"/>
             </BottomNavigation>
         
