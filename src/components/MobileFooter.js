@@ -18,7 +18,7 @@ const getHeadPathname = compose(
 
 const pageToIndexMap={
     posts: 0,
-    why: 1,
+    mission: 1,
     me: 2
 }
 
@@ -44,7 +44,7 @@ class MobileFooter extends React.Component {
                 onChange={this.handleChange}
                 showLabels>
                 <BottomNavigationAction classes={{selected: styles.selected}} label="Posts" icon={<Blog />} component={Link} to="/posts"/>
-                <BottomNavigationAction classes={{selected: styles.selected}} label="Why" icon={<About />} component={Link} to="/why"/>
+                <BottomNavigationAction classes={{selected: styles.selected}} label="Mission" icon={<About />} component={Link} to="/mission"/>
                 <BottomNavigationAction classes={{selected: styles.selected}} label="Me" icon={<Me />} component={Link} to="/me"/>
             </BottomNavigation>
         
