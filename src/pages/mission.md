@@ -1,5 +1,5 @@
 ---
-title: "Our Mission"
+title: "mission"
 type: "page"
 date: "2018-10-13"
 ---

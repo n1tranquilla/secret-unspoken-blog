@@ -24,7 +24,7 @@ export const query = graphql`
         subtitle
       }
     }
-    markdownRemark(frontmatter: { title: { eq: "Our Mission" } }) {
+    markdownRemark(frontmatter: { title: { eq: "mission" } }) {
       html
     }
   }
