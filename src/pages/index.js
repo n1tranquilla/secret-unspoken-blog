@@ -5,7 +5,6 @@ import Column from '../components/Column'
 import { graphql } from 'gatsby'
 import TotalCount from '../components/TotalCount'
 
-import './index.css'
 import SplashSection from '../components/SplashSection';
 
 const IndexPage = (props) => (
