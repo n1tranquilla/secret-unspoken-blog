@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import Column from '../components/Column'
 import { graphql } from 'gatsby'
+import GetStarted from '../components/GetStarted'
 import Subtitle from '../components/Subtitle'
 
 const IndexPage = (props) => (
@@ -9,6 +10,7 @@ const IndexPage = (props) => (
     <Column>
       <Subtitle >{props.data.site.siteMetadata.subtitle}</Subtitle>
       <div className="markdown-body" dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
+      <GetStarted />
     </Column>
   </Layout>
 )

@@ -1,0 +1,12 @@
+.link {
+    text-decoration: none;
+}
+
+.container {
+    width: calc(100% - 4em);
+    padding: 2em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
