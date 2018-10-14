@@ -1,7 +1,7 @@
 ---
 title: "mission"
 type: "page"
-date: "2018-10-13"
+date: "2018-10-14"
 ---
 The goal of this blog is to talk about sexual issues that men commonly experience. In the tagline for the site 
 
