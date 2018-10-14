@@ -10,6 +10,7 @@ import { graphql, StaticQuery } from 'gatsby'
 import Hidden from '@material-ui/core/Hidden'
 
 import styles from './Layout.module.css'
+import GoogleAnalytics from './GoogleAnalytics';
 
 
 const Layout = props => (
@@ -20,6 +21,7 @@ const Layout = props => (
                 siteMetadata {
                     title
                     subtitle
+                    gaTrackingID
                 }
             }
         }`
@@ -33,6 +35,7 @@ const Layout = props => (
                     <meta name="Description" content="A blog about men's sexuality and sexual addiction"/>
                     <html lang="en" />
                 </Helmet>
+                <GoogleAnalytics gaTrackingID={data.site.siteMetadata.gaTrackingID}/>
                 <Hidden smDown>
                     <DesktopHeader 
                         title={data.site.siteMetadata.title}
