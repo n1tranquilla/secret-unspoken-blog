@@ -33,7 +33,7 @@ class MobileFooter extends React.Component {
 
     componentDidMount(){
         const topLevelPage = getHeadPathname(this.props.location.pathname)
-        this.setState({ value: pageToIndexMap[topLevelPage] })
+        this.setState({ value: pageToIndexMap[topLevelPage] || 0 })
     }
 
     render(){

@@ -2,6 +2,7 @@
     padding: 1em;
     padding-top: 2em;
     padding-bottom: 2em;
+    margin-bottom: 1em;
     
     background-color: var(--secondary-color-light);
     width: calc(100% - 2em);
