@@ -68,5 +68,11 @@ module.exports = {
         head: false
       },
     },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://github.us19.list-manage.com/subscribe/post?u=14379fe8d1e848c74f7728730&amp;id=b473346c05', // see instructions section below
+      },
+    }
   ]
 }
