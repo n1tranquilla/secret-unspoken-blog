@@ -2,6 +2,7 @@ import React from 'react'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
 import { withStyles } from '@material-ui/core/styles'
+import MySnackbar from './MySnackbar'
 
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 import sty from './Subscribe.module.css'
@@ -57,8 +58,7 @@ class Subscribe extends React.Component {
                     classes={{root: this.props.classes.button}}>
                     Subscribe
                 </Button>
-                { this.state.msg && <div>{this.state.msg}</div> }
-                
+                <MySnackbar msg={this.state.msg}/>
             </div>
         )
     }
