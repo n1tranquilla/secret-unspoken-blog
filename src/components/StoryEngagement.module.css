@@ -1,0 +1,12 @@
+.container {
+    width: calc(100% - 2em);
+
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1em;
+}
+
+.share {
+    cursor: pointer;
+}
