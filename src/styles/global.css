@@ -49,6 +49,13 @@ p {
     margin-bottom: 1em;
 }
 
+hr {
+    width: 100%;
+    border-color: var(--secondary-color-light);
+    background-color: var(--secondary-color-light);
+    color: var(--secondary-color-light);
+}
+
 #disqus_thread {
     border-top: 1px solid var(--secondary-color-light);
     margin-top: 2em;
