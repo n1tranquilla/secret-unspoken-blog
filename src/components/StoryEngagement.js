@@ -1,10 +1,10 @@
 import React from 'react'
 
 import Share from '@material-ui/icons/Share'
+import IconButton from '@material-ui/core/IconButton'
 import styles from './StoryEngagement.module.css'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import MySnackbar from './MySnackbar'
-import Tooltip from '@material-ui/core/Tooltip'
 
 class StoryEngagement extends React.Component {
 
@@ -25,11 +25,11 @@ class StoryEngagement extends React.Component {
         return (
             <React.Fragment>
                 <div className={styles.container}>
-                    <CopyToClipboard className={styles.share} text={this.props.url} onCopy={this.handleCopy}>
-                        <Tooltip title="Share">
+                    <IconButton>
+                        <CopyToClipboard className={styles.share} text={this.props.url} onCopy={this.handleCopy}>
                             <Share/>
-                        </Tooltip>
-                    </CopyToClipboard>
+                        </CopyToClipboard>
+                    </IconButton>
                 </div>
                 <MySnackbar msg={this.state.copied && "Link copied to clipboard"}/>
             </React.Fragment>
