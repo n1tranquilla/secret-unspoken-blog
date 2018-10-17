@@ -7,6 +7,8 @@
     padding: 1em;
 }
 
-.share {
-    cursor: pointer;
+.button-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
