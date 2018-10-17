@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '@material-ui/core/Button'
 import ArrowRight from '@material-ui/icons/ArrowRightAlt'
 import { Link } from 'gatsby'
 import { withStyles } from '@material-ui/core/styles'
@@ -17,16 +16,10 @@ const custom = {
 }
 
 const GetStarted = props => (
-    <div className={styles.container}>
-        <Link className={styles.link} to="/posts">
-            <Button variant="contained" color="primary" classes={{
-                root: props.classes.button,
-            }}>
-                Get Started
-                <ArrowRight />
-            </Button>
-        </Link>
-      </div>
+    <Link className={styles.link} to="/posts">
+        Get Started
+        <ArrowRight />
+    </Link>
 )
 
 export default withStyles(custom)(GetStarted)

@@ -16,7 +16,7 @@ const IndexPage = (props) => (
     <Column>
       <Subtitle >{props.data.site.siteMetadata.subtitle}</Subtitle>
       <div className="markdown-body" dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
-      {/* <GetStarted /> */}
+      <GetStarted />
       <Hidden mdUp>
         <hr/>
         <SubscribeContainer>
