@@ -19,7 +19,7 @@ const Layout = props => (
                 site {
                 siteMetadata {
                     title
-                    subtitle
+                    tagline
                 }
             }
         }`
@@ -36,13 +36,13 @@ const Layout = props => (
                 <Hidden smDown>
                     <DesktopHeader 
                         title={data.site.siteMetadata.title}
-                        subtitle={data.site.siteMetadata.subtitle}
+                        subtitle={data.site.siteMetadata.tagline}
                     />
                 </Hidden>
                 <Hidden mdUp>
                     <MobileHeader 
                         title={data.site.siteMetadata.title}
-                        subtitle={data.site.siteMetadata.subtitle}
+                        subtitle={data.site.siteMetadata.tagline}
                     />
                 </Hidden>
                 <div className={styles.layout}>

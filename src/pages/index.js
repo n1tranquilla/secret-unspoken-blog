@@ -36,11 +36,6 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    site {
-      siteMetadata {
-        subtitle
-      }
-    }
     markdownRemark(frontmatter: { title: { eq: "mission" } }) {
       html
     }
