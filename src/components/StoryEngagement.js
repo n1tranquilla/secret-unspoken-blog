@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Share from '@material-ui/icons/Share'
-import IconButton from '@material-ui/core/IconButton'
+import Share from '@material-ui/icons/Link'
+import Button from '@material-ui/core/Button'
 import styles from './StoryEngagement.module.css'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import MySnackbar from './MySnackbar'
@@ -13,6 +13,7 @@ class StoryEngagement extends React.Component {
     }
 
     handleCopy = () => {
+        clearTimeout(this.copyId)
         this.setState({copied:true})
         this.copyId=setTimeout(()=>this.setState({copied:false}),5000)
     }
@@ -25,13 +26,13 @@ class StoryEngagement extends React.Component {
         return (
             <React.Fragment>
                 <div className={styles.container}>
-                    <IconButton>
-                        <CopyToClipboard className={styles.share} text={this.props.url} onCopy={this.handleCopy}>
-                            <Share/>
+                    <Button>
+                        <CopyToClipboard text={this.props.url} onCopy={this.handleCopy}>
+                            <div className={styles.buttonContent}><Share/><pre> Copy Page URL</pre></div>
                         </CopyToClipboard>
-                    </IconButton>
+                    </Button>
                 </div>
-                <MySnackbar msg={this.state.copied && "Link copied to clipboard"}/>
+                <MySnackbar msg={this.state.copied && "URL copied to clipboard"}/>
             </React.Fragment>
             
         )
