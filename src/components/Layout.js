@@ -19,7 +19,8 @@ const Layout = props => (
                 site {
                 siteMetadata {
                     title
-                    subtitle
+                    tagline,
+                    description
                 }
             }
         }`
@@ -30,19 +31,19 @@ const Layout = props => (
                     <title>{data.site.siteMetadata.title}</title>   
                     <link href="https://fonts.googleapis.com/css?family=Unica+One&text=Secret%20Unspoken" rel="stylesheet" />
                     <link href="https://fonts.googleapis.com/css?family=Spectral|Karla" rel="stylesheet"/>
-                    <meta name="Description" content="A blog about men's sexuality and sexual addiction"/>
+                    <meta name="Description" content={data.site.siteMetadata.description}/>
                     <html lang="en" />
                 </Helmet>
                 <Hidden smDown>
                     <DesktopHeader 
                         title={data.site.siteMetadata.title}
-                        subtitle={data.site.siteMetadata.subtitle}
+                        subtitle={data.site.siteMetadata.tagline}
                     />
                 </Hidden>
                 <Hidden mdUp>
                     <MobileHeader 
                         title={data.site.siteMetadata.title}
-                        subtitle={data.site.siteMetadata.subtitle}
+                        subtitle={data.site.siteMetadata.tagline}
                     />
                 </Hidden>
                 <div className={styles.layout}>
