@@ -8,8 +8,9 @@ const DesktopHeader = props => (
     <nav className={styles.nav}>
         <div className={styles.navLeft}></div>
         <div className={styles.navCenter}>
-            <Link to="/" className={styles.title}>
-                <h1>{props.title}</h1>
+            <Link to="/" className={styles.home}>
+                <h1 className={styles.center}>{props.title}</h1>
+                <h4 className={styles.center}>{props.subtitle}</h4>
             </Link>
         </div>
         <div className={styles.navRight}>

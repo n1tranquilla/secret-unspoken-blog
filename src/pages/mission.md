@@ -1,11 +1,11 @@
 ---
 title: "mission"
 type: "page"
-date: "2018-10-14"
+date: "2018-10-17"
 ---
 The goal of this blog is to talk about sexual issues that men commonly experience. In the tagline for the site 
 
-> Talking about the secret most men have but won't share
+> Secret Unspoken: The secret most men have
     
 I share my belief that most men have aspects of their sexuality that they are ashamed of, feel they cannot share for fear of being discovered, and remain stuck in their struggles. The truth is that these issues are commonly experienced by most men. 
 

@@ -3,7 +3,6 @@ import Layout from '../components/Layout'
 import Column from '../components/Column'
 import { graphql } from 'gatsby'
 import GetStarted from '../components/GetStarted'
-import Subtitle from '../components/Subtitle'
 import Subscribe from '../components/Subscribe'
 import Hidden from '@material-ui/core/Hidden'
 import SubscribeContainer from '../components/SubscribeContainer'
@@ -14,7 +13,6 @@ const IndexPage = (props) => (
       <Column maxWidth='25vw'/>
     </Hidden>
     <Column>
-      <Subtitle >{props.data.site.siteMetadata.subtitle}</Subtitle>
       <div className="markdown-body" dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
       <GetStarted />
       <Hidden mdUp>
