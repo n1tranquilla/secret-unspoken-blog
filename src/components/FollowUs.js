@@ -8,11 +8,11 @@ import Twitter from './twitter.svg'
 
 const FollowUs = props => (
     <div className={styles.container}>
-        <a className={styles.link} href={props.twitterUrl} target="_blank" alt="Twitter">
+        <a className={styles.link} href={props.twitterUrl} alt="Twitter">
             <img src={Twitter} height={24} width={24} alt="Twitter"/>
         </a>
         <Link className={styles.link} to="/rss.xml" alt="RSS">
-            <RSSIcon />
+            <RSSIcon height={24} width={24}/>
         </Link>
     </div>
 )
