@@ -7,3 +7,8 @@
     justify-content: flex-start;
     align-items: center;
 }
+
+.link {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
