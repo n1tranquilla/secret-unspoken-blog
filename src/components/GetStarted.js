@@ -1,5 +1,4 @@
 import React from 'react'
-import ArrowRight from '@material-ui/icons/ArrowRightAlt'
 import { Link } from 'gatsby'
 import { withStyles } from '@material-ui/core/styles'
 
@@ -17,8 +16,7 @@ const custom = {
 
 const GetStarted = props => (
     <Link className={styles.link} to="/posts">
-        Get Started
-        <ArrowRight />
+        Get Started ⭢
     </Link>
 )
 

@@ -5,7 +5,8 @@ import { graphql } from 'gatsby'
 import GetStarted from '../components/GetStarted'
 import Subscribe from '../components/Subscribe'
 import Hidden from '@material-ui/core/Hidden'
-import SubscribeContainer from '../components/SubscribeContainer'
+import SecondaryContent from '../components/SecondaryContent'
+import FollowUs from '../components/FollowUs'
 
 const IndexPage = (props) => (
   <Layout>
@@ -13,20 +14,21 @@ const IndexPage = (props) => (
       <Column maxWidth='25vw'/>
     </Hidden>
     <Column>
+      <FollowUs twitterUrl={props.data.site.siteMetadata.twitterUrl}/>
       <div className="markdown-body" dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
       <GetStarted />
       <Hidden mdUp>
         <hr/>
-        <SubscribeContainer>
+        <SecondaryContent>
           <Subscribe/>
-        </SubscribeContainer>
+        </SecondaryContent>
       </Hidden>  
     </Column>
     <Hidden smDown>
       <Column maxWidth='25vw'>
-        <SubscribeContainer>
+        <SecondaryContent>
           <Subscribe/>
-        </SubscribeContainer>
+        </SecondaryContent>
       </Column>
     </Hidden>
   </Layout>
@@ -36,6 +38,11 @@ export default IndexPage
 
 export const query = graphql`
   query {
+    site {
+      siteMetadata {
+        twitterUrl
+      }
+    }
     markdownRemark(frontmatter: { title: { eq: "mission" } }) {
       html
     }
