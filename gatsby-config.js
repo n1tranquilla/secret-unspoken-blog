@@ -4,7 +4,8 @@ module.exports = {
     tagline: 'The secret most men have',
     description: 'A blog discussing sexual addiction among men',
     siteUrl: 'https://secret-unspoken.github.io',
-    shortname: 'secret-unspoken'
+    shortname: 'secret-unspoken',
+    twitterUrl: 'https://twitter.com/SecretUnspoken1'
   },
   plugins: [
     {
@@ -96,7 +97,7 @@ module.exports = {
                 allMarkdownRemark(
                   limit: 1000,
                   sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: {frontmatter: { type: { eq: "post" } }}
+                  filter: {frontmatter: { draft: { ne: true }, type: { eq: "post" } }}
                 ) {
                   edges {
                     node {
