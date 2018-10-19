@@ -14,7 +14,10 @@ const IndexPage = (props) => (
       <Column maxWidth='25vw'/>
     </Hidden>
     <Column>
-      <FollowUs twitterUrl={props.data.site.siteMetadata.twitterUrl}/>
+      <FollowUs 
+        twitterUrl={props.data.site.siteMetadata.twitterUrl}
+        facebookUrl={props.data.site.siteMetadata.facebookUrl}
+      />
       <div className="markdown-body" dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
       <GetStarted />
       <Hidden mdUp>
@@ -41,6 +44,7 @@ export const query = graphql`
     site {
       siteMetadata {
         twitterUrl
+        facebookUrl
       }
     }
     markdownRemark(frontmatter: { title: { eq: "mission" } }) {

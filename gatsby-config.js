@@ -5,7 +5,8 @@ module.exports = {
     description: 'A blog discussing sexual addiction among men',
     siteUrl: 'https://secret-unspoken.github.io',
     shortname: 'secret-unspoken',
-    twitterUrl: 'https://twitter.com/SecretUnspoken1'
+    twitterUrl: 'https://twitter.com/SecretUnspoken1',
+    facebookUrl: 'https://www.facebook.com/secretunspoken'
   },
   plugins: [
     {
