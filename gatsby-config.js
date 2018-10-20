@@ -6,7 +6,8 @@ module.exports = {
     siteUrl: 'https://secret-unspoken.github.io',
     shortname: 'secret-unspoken',
     twitterUrl: 'https://twitter.com/SecretUnspoken1',
-    facebookUrl: 'https://www.facebook.com/secretunspoken'
+    facebookUrl: 'https://www.facebook.com/secretunspoken',
+    gaTrackingId: 'UA-127453671-1'
   },
   plugins: [
     {

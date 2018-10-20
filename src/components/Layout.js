@@ -4,6 +4,7 @@ import MobileHeader from './MobileHeader'
 import MobileFooter from './MobileFooter'
 import Helmet from 'react-helmet'
 import CopyrightNotice from './CopyrightNotice'
+import GoogleAnalyticsDisclaimer from './GoogleAnalyticsDisclaimer'
 import { Location } from '@reach/router'
 
 import { graphql, StaticQuery } from 'gatsby'
@@ -21,6 +22,7 @@ const Layout = props => (
                     title
                     tagline,
                     description
+                    gaTrackingId
                 }
             }
         }`
@@ -50,6 +52,7 @@ const Layout = props => (
                     { props.children }
                 </div>
                 <CopyrightNotice/>
+                <GoogleAnalyticsDisclaimer gaTrackingId={data.site.siteMetadata.gaTrackingId}/>
                 <Hidden mdUp>
                     <Location>
                         { ({ location }) => <MobileFooter location={location}/> }
