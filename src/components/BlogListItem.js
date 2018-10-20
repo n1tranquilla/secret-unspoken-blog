@@ -1,14 +1,17 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import DateOfPost from './DateOfPost'
+import PostHeader from './PostHeader'
 
 import styles from './BlogListItem.module.css'
 
 const BlogListItem = props => (
     <div className={styles.blogListItem}>
         <Link className={styles.link} to={props.to}>
-            <DateOfPost>{props.date}</DateOfPost>
-            <h2 className={styles.title}>{props.title}</h2>
+            <PostHeader 
+              title={props.title} 
+              date={props.date} 
+              wordCount={props.wordCount}
+            />
             <span className={styles.excerpt}>{props.excerpt}</span>
         </Link>
     </div>

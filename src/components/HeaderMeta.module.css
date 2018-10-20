@@ -1,5 +1,6 @@
-.date {
+.meta {
     font-size: small;
     color: black;
     opacity: 0.75;
+    padding-right: 0.25em;
 }
