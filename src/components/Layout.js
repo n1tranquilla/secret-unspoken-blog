@@ -6,6 +6,7 @@ import Helmet from 'react-helmet'
 import CopyrightNotice from './CopyrightNotice'
 import GoogleAnalyticsDisclaimer from './GoogleAnalyticsDisclaimer'
 import { Location } from '@reach/router'
+import BottomPadding from './BottomPadding'
 
 import { graphql, StaticQuery } from 'gatsby'
 import Hidden from '@material-ui/core/Hidden'
@@ -54,6 +55,7 @@ const Layout = props => (
                 <CopyrightNotice/>
                 <GoogleAnalyticsDisclaimer gaTrackingId={data.site.siteMetadata.gaTrackingId}/>
                 <Hidden mdUp>
+                    <BottomPadding />
                     <Location>
                         { ({ location }) => <MobileFooter location={location}/> }
                     </Location>
