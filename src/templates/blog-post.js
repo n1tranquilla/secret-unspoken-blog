@@ -5,8 +5,9 @@ import Column from '../components/Column'
 import Disqus from 'disqus-react'
 import StoryEngagement from "../components/StoryEngagement"
 import PostHeader from '../components/PostHeader'
+import PostLink from "../components/PostLink"
 
-export default ({ data, location }) => {
+export default ({ data, location, pageContext }) => {
   const siteMeta = data.site.siteMetadata
   const post = data.markdownRemark
   const disqusConfig = {
@@ -14,6 +15,7 @@ export default ({ data, location }) => {
     identifier: post.fields.slug, 
     title: post.frontmatter.title
   }
+  const { prev, next } = pageContext
   return (
     <Layout>
         <Column>
@@ -24,6 +26,8 @@ export default ({ data, location }) => {
             />
             <StoryEngagement url={location.href}/>
             <div className="markdown-body" dangerouslySetInnerHTML={{ __html: post.html }} />
+            { prev && <PostLink prefix="Last: " to={prev.fields.slug}>{prev.frontmatter.title}</PostLink> }
+            { next && <PostLink prefix="Next: " to={next.fields.slug}>{next.frontmatter.title}</PostLink> }
             <Disqus.DiscussionEmbed shortname={siteMeta.shortname} config={disqusConfig}/>
         </Column>
     </Layout>
