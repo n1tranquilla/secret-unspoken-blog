@@ -12,6 +12,7 @@ const PostsPage = props => (
               to={node.fields.slug}
               title={node.frontmatter.title} 
               date={node.frontmatter.date} 
+              wordCount={node.wordCount.words}
               excerpt={node.excerpt}
               />
           )) }
@@ -35,6 +36,9 @@ export const query = graphql`
             date(formatString: "DD MMMM, YYYY")
           }
           excerpt
+          wordCount {
+            words
+          }
         }
       }
     }

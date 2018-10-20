@@ -2,9 +2,9 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Column from '../components/Column'
-import DateOfPost from '../components/DateOfPost'
 import Disqus from 'disqus-react'
 import StoryEngagement from "../components/StoryEngagement"
+import PostHeader from '../components/PostHeader'
 
 export default ({ data, location }) => {
   const siteMeta = data.site.siteMetadata
@@ -17,8 +17,11 @@ export default ({ data, location }) => {
   return (
     <Layout>
         <Column>
-            <DateOfPost>{post.frontmatter.date}</DateOfPost>
-            <h2>{post.frontmatter.title}</h2>
+            <PostHeader 
+              title={post.frontmatter.title} 
+              date={post.frontmatter.date} 
+              wordCount={post.wordCount.words}
+            />
             <StoryEngagement url={location.href}/>
             <div className="markdown-body" dangerouslySetInnerHTML={{ __html: post.html }} />
             <Disqus.DiscussionEmbed shortname={siteMeta.shortname} config={disqusConfig}/>
@@ -42,6 +45,9 @@ export const query = graphql`
       }
       fields {
         slug
+      }
+      wordCount {
+        words
       }
     }
   }

@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Column from '../components/Column'
-import DateOfPost from '../components/DateOfPost'
+import PostHeader from '../components/PostHeader'
 import "github-markdown-css"
 
 export default ({ data }) => {
@@ -10,8 +10,10 @@ export default ({ data }) => {
   return (
     <Layout>
         <Column>
-            <DateOfPost prefix="Last Modified: ">{post.frontmatter.date}</DateOfPost>
-            <h2>{post.frontmatter.title}</h2>
+            <PostHeader 
+              title={post.frontmatter.title} 
+              date={post.frontmatter.date}
+            />
             <div className="markdown-body" dangerouslySetInnerHTML={{ __html: post.html }} />
         </Column>
     </Layout>
