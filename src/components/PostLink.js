@@ -5,7 +5,7 @@ import styles from './PostLink.module.css'
 
 const PostLink = props => (
     <div className={styles.container}>
-        {props.prefix}<Link to={props.to}>{props.children}</Link>
+        <pre>{props.prefix}<Link to={props.to}>{props.children}</Link></pre>
     </div>
 )
 
