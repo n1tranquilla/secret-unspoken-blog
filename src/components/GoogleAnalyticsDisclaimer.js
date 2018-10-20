@@ -30,7 +30,7 @@ class GoogleAnalyticsDisclaimer extends React.Component {
 
     render(){
         return (
-            <div key={this.state.redrawKey} className={styles.disclaimer}>
+            <div key={this.state.optOut} className={styles.disclaimer}>
                 <pre>This site uses Google Analytics. </pre>
                 <a href="/#" onClick={this.toggle}>
                     { this.state.optOut ? 'Opt in.' : 'Opt out.' }
