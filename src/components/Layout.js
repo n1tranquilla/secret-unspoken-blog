@@ -35,7 +35,7 @@ const Layout = props => (
                     <link href="https://fonts.googleapis.com/css?family=Unica+One&text=Secret%20Unspoken" rel="stylesheet" />
                     <link href="https://fonts.googleapis.com/css?family=Spectral|Karla" rel="stylesheet"/>
                     <meta name="Description" content={data.site.siteMetadata.description}/>
-                    <meta name="flattr:id" content="vlp70e"></meta>
+                    <meta name="flattr:id" content="vlp70e" />
                     <html lang="en" />
                 </Helmet>
                 <Hidden smDown>
