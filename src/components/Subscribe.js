@@ -34,6 +34,14 @@ class Subscribe extends React.Component {
         const result = await addToMailchimp(this.state.email)
         this.setState({msg: result.msg })
         setTimeout(()=>this.setState({ msg: null }),5000)
+        if (result.result==="success" && window.ga){
+            window.ga("send", "event", {
+                eventCategory: "Subscribe",
+                eventAction: "subscribe success",
+                eventLabel: "Subscribe Campaign",
+                eventValue: 1
+            })
+        }
     }
 
     render(){
