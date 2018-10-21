@@ -1,0 +1,14 @@
+---
+title: "Telling my story"
+date: "2018-10-20"
+type: "post"
+---
+For me, as with many other adolescents, middle school was a challenging time. During those years, a variety of circumstances left me feeling isolated: sickness with my dad at home, sisters who had moved out, struggling socially to connect, and an adopted style of faith that kept me at arms length from my peers. Add to that mix, a dash of puberty, and you have a recipe for vice that has taken me years to adequately address. 
+
+During those years, my dad became sick with Guillain-Barre syndrome, a degenerative nerve disease that left him sick for a year, and recovering for much longer. My mom, who had stayed home while me and my two older sisters were growing up, had decided it was time to return to work and help support dad and the family. My sisters, who were 5 and 7 years older than me were either heavily involved with friends or moved out. Being young and devout in my faith, I adopted an isolationist attitude towards others which kept me making any friends outside of that community.
+
+School and home life were lonely; my fervorously faith-informed attitude kept me from making friends at school (though I was drying to connect), and I was often home alone in the evening for hours at a time. It was during this time that I found some comfort in boy-ish sexual exploration. Without proper support and healthy friendships, what started innocently-enough progressed into concerning behaviours in unhealthy attempts to assuage the loneliness, chaos, and negative self-esteem as perceived-outsider. 
+
+Through the years, as the behaviour progressed from boy-ish discovery to vice, I found myself stuck. Compounding the negative self esteem, I was ashamed of my behaviour and of what I must be if I was the kind of person who could be caught by it. I accepted that, for better of for worse, this would be my crutch throughout life, and I would have to try my best to deal with it. And that crutch was pornography. 
+
+Depending on the stresses of life, this crutch stayed with me, sometimes more, sometimes less, until I was challenged. A friend invited me out to lunch one day, and for the last ten minutes of the conversation, told me about his struggle with sexual addiciton. He shared with me some details about the nature of the problem, and frequency, and that he had been to workshop to try to deal with it. Uncomfortable with the topic, I was mostly focused on getting through until he mentioned near the end that he had been to a workshop last year, and had been following the program, and had been sober for one year. 
