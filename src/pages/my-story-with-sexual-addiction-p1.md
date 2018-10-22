@@ -23,10 +23,10 @@ We decided that the workshop was worth a try. I attended a weekend workshop in M
 * The issues were emotional in nature, and I needed to work on emotional and mental health to see success
 * I needed to be part of a community of men built on this issue
 
-Aside from the first, two of my other friends attended, either before me, or after. That year following, 5 of us worked through the material we had been given, meeting weekly. 
+Aside from the first, two of my other friends attended, either before me, or after. That year following, 5 of us worked through the material we had been given, meeting weekly, working on community, the addiction directly, and emotional and mental health. I'm excited to elaborate on this later.
 
 ***
 
-One of the cores to the success has been community around this issue. Part of what I would love to see come of sharing, is the building of a larger community of of small groups around this issue. Statistically, most men find themselves stuck in this issue. At a later time, I will share my vision with you guys of what I hope to see.
+One of the cores to the success has been community around this issue. Part of what I would love to see come of sharing, is the building of a larger community of small groups around this issue. Statistically, most men find themselves stuck in this issue, but it is powerful enough to keep us isolated from each other. At a later time, I will share my vision with you guys of what I hope to see.
 
 Stay tuned for Part 2, where I’ll elaborate on the recovery aspect of this problem. 
