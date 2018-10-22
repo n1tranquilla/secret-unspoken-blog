@@ -1,9 +1,9 @@
 ---
 title: "Part 1: My story"
-date: "2018-10-20"
+date: "2018-10-22"
 type: "post"
 ---
-For me, as with many other adolescents, middle school was a challenging time. During those years, a variety of circumstances left me feeling isolated: sickness with my dad at home, sisters who had moved out, struggling socially to connect, and an adopted style of faith that kept me at arms length from my peers. Add to that mix, a dash of puberty, and you have a recipe for vice that has taken me years to adequately address. 
+For me, as with many other teenagers, middle school was a challenging time. During those years, a variety of circumstances left me feeling isolated: sickness with my dad at home, sisters who had moved out, struggling socially to connect, and an adopted style of faith that kept me at arms length from my peers. Add to that mix, a dash of puberty, and you have a recipe for vice that has taken me years to adequately address. 
 
 During those years, my dad became sick with Guillain-Barre syndrome, a degenerative nerve disease that left him sick for a year, and recovering for much longer. My mom, who had stayed home while me and my two older sisters were growing up, had decided it was time to return to work and help support dad and the family. My sisters, who were 5 and 7 years older than me were either heavily involved with friends or moved out. Being young and devout in my faith, I adopted an isolationist attitude towards others which kept me making any friends outside of that community.
 
@@ -29,4 +29,4 @@ Aside from the first, two of my other friends attended, either before me, or aft
 
 One of the cores to the success has been community around this issue. Part of what I would love to see come of sharing, is the building of a larger community of small groups around this issue. Statistically, most men find themselves stuck in this issue, but it is powerful enough to keep us isolated from each other. At a later time, I will share my vision with you guys of what I hope to see.
 
-Stay tuned for Part 2, where I’ll elaborate on the recovery aspect of this problem. 
+Stay tuned for Part 2, where I’ll elaborate on the recovery aspect. 
