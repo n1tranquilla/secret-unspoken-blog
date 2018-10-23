@@ -32,14 +32,20 @@ class StoryEngagement extends React.Component {
 
     render(){
 
-        const url = new URL(this.props.url)
-        url.searchParams.append("suid",Date.now())
-
+        let href
+        if (URL){
+            const url = new URL(this.props.url)
+            url.searchParams.append("suid",Date.now())
+            href=url.href
+        } else {
+            href=this.props.url
+        }
+        
         return (
             <React.Fragment>
                 <div className={styles.container}>
                     <Button>
-                        <CopyToClipboard text={url.href} onCopy={this.handleCopy}>
+                        <CopyToClipboard text={href} onCopy={this.handleCopy}>
                             <div className={styles.buttonContent}><Share/><pre> Copy Page URL</pre></div>
                         </CopyToClipboard>
                     </Button>
