@@ -33,8 +33,8 @@ class StoryEngagement extends React.Component {
     render(){
 
         let href
-        if (URL){
-            const url = new URL(this.props.url)
+        if (window.URL){
+            const url = new window.URL(this.props.url)
             url.searchParams.append("suid",Date.now())
             href=url.href
         } else {
