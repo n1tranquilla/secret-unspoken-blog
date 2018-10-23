@@ -14,10 +14,24 @@ const custom = {
     }
 }
 
+const handleClick = () => {
+    if (window.ga){
+        window.ga("send", "event", {
+            eventCategory: "Retention",
+            eventAction: "posts",
+            eventLabel: "Retention Campaign",
+            eventValue: 1
+        })
+    }
+}
+
 const GetStarted = props => (
-    <Link className={styles.link} to="/posts">
-        Get Started ⭢
-    </Link>
+    <div className={styles.container}>
+        <Link onClick={handleClick} to="/posts">
+            Get Started &#8594;
+        </Link>
+    </div>
+    
 )
 
 export default withStyles(custom)(GetStarted)
