@@ -12,10 +12,18 @@ class StoryEngagement extends React.Component {
         copied:false
     }
 
-    handleCopy = () => {
+    handleCopy = (text) => {
         clearTimeout(this.copyId)
         this.setState({copied:true})
         this.copyId=setTimeout(()=>this.setState({copied:false}),5000)
+        if (window.ga){
+            window.ga("send", "event", {
+                eventCategory: "Sharing",
+                eventAction: text,
+                eventLabel: "Sharing Campaign",
+                eventValue: 1
+            })
+        }
     }
 
     componentWillUnmount(){
@@ -23,11 +31,15 @@ class StoryEngagement extends React.Component {
     }
 
     render(){
+
+        const url = new URL(this.props.url)
+        url.searchParams.append("suid",Date.now())
+
         return (
             <React.Fragment>
                 <div className={styles.container}>
                     <Button>
-                        <CopyToClipboard text={this.props.url} onCopy={this.handleCopy}>
+                        <CopyToClipboard text={url.href} onCopy={this.handleCopy}>
                             <div className={styles.buttonContent}><Share/><pre> Copy Page URL</pre></div>
                         </CopyToClipboard>
                     </Button>
