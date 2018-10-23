@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '@material-ui/core/Button'
 import { Link } from 'gatsby'
 import { withStyles } from '@material-ui/core/styles'
 
@@ -14,10 +15,29 @@ const custom = {
     }
 }
 
+const handleClick = () => {
+    if (window.ga){
+        window.ga("send", "event", {
+            eventCategory: "Retention",
+            eventAction: "posts",
+            eventLabel: "Retention Campaign",
+            eventValue: 1
+        })
+    }
+}
+
 const GetStarted = props => (
-    <Link className={styles.link} to="/posts">
-        Get Started ⭢
-    </Link>
+    <div className={styles.container}>
+        <Button 
+            variant="contained" 
+            className={props.classes.button} 
+            component={Link} 
+            onClick={handleClick}
+            to="/posts">
+            Get Started &#8594;
+        </Button>
+    </div>
+    
 )
 
 export default withStyles(custom)(GetStarted)
