@@ -9,7 +9,18 @@ import MySnackbar from './MySnackbar'
 class StoryEngagement extends React.Component {
 
     state={
-        copied:false
+        copied:false,
+        href: null
+    }
+
+    componentDidMount(){
+        if (window.URL){
+            const url = new window.URL(this.props.url)
+            url.searchParams.append("suid",Date.now())
+            this.setState({ href: url.href })
+        } else {
+            this.setState({ href: this.props.url })
+        }
     }
 
     handleCopy = (text) => {
@@ -32,20 +43,13 @@ class StoryEngagement extends React.Component {
 
     render(){
 
-        let href
-        if (window.URL){
-            const url = new window.URL(this.props.url)
-            url.searchParams.append("suid",Date.now())
-            href=url.href
-        } else {
-            href=this.props.url
-        }
+        if(!this.state.href) return null
         
         return (
             <React.Fragment>
                 <div className={styles.container}>
                     <Button>
-                        <CopyToClipboard text={href} onCopy={this.handleCopy}>
+                        <CopyToClipboard text={this.state.href} onCopy={this.handleCopy}>
                             <div className={styles.buttonContent}><Share/><pre> Copy Page URL</pre></div>
                         </CopyToClipboard>
                     </Button>
