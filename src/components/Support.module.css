@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: small;
+    opacity: 0.75;
+
+    height: 2em;
+}

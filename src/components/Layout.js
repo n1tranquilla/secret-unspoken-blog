@@ -7,6 +7,7 @@ import CopyrightNotice from './CopyrightNotice'
 import GoogleAnalyticsDisclaimer from './GoogleAnalyticsDisclaimer'
 import { Location } from '@reach/router'
 import BottomPadding from './BottomPadding'
+import Support from './Support'
 
 import { graphql, StaticQuery } from 'gatsby'
 import Hidden from '@material-ui/core/Hidden'
@@ -54,9 +55,10 @@ const Layout = props => (
                     { props.children }
                 </div>
                 <CopyrightNotice/>
+                <Support />
                 <GoogleAnalyticsDisclaimer gaTrackingId={data.site.siteMetadata.gaTrackingId}/>
+                <BottomPadding />
                 <Hidden mdUp>
-                    <BottomPadding />
                     <Location>
                         { ({ location }) => <MobileFooter location={location}/> }
                     </Location>
