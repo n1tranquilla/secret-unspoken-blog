@@ -9,6 +9,32 @@
 }
 
 .link {
-    padding-left: 0.75em;
-    padding-right: 0.75em;
+    width: 30px;
+    height: 30px;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+    padding: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link--i-pink {
+    background-color: #DD006B;
+}
+
+.link--fb-blue {
+    background-color: #4267b2;
+}
+
+.link--tw-blue {
+    background-color: #1DA1F2;
+}
+
+.link--rss-orange {
+    background-color: #F45C00;
+    color: white;
 }

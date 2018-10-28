@@ -17,6 +17,7 @@ const IndexPage = (props) => (
       <FollowUs 
         twitterUrl={props.data.site.siteMetadata.twitterUrl}
         facebookUrl={props.data.site.siteMetadata.facebookUrl}
+        instagramUrl={props.data.site.siteMetadata.instagramUrl}
       />
       <div className="markdown-body" dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
       <GetStarted />
@@ -45,6 +46,7 @@ export const query = graphql`
       siteMetadata {
         twitterUrl
         facebookUrl
+        instagramUrl
       }
     }
     markdownRemark(frontmatter: { title: { eq: "mission" } }) {
