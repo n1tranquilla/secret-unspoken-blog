@@ -18,7 +18,7 @@ const FollowUs = props => (
             <img src={Facebook} height={24} width={24} alt="Facebook"/>
         </a>
         <a className={classNames(styles.link,styles.linkIPink)} href={props.instagramUrl} alt="Instagram">
-            <img src={Instagram} height={24} width={24} alt="Instagram"/>
+            <img src={Instagram} height={20} width={20} alt="Instagram"/>
         </a>
         <Link className={classNames(styles.link,styles.linkRssOrange)} to="/rss.xml" alt="RSS">
             <RSSIcon height={24} width={24}/>

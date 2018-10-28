@@ -28,6 +28,8 @@
 
 .link--fb-blue {
     background-color: #4267b2;
+    padding-top: 0;
+    padding-bottom: 6px;
 }
 
 .link--tw-blue {
