@@ -2,7 +2,10 @@
     margin:0;
     padding: 0;
     font-family: 'Karla', sans-serif;
+}
 
+html,
+html[data-theme="light"]{
     --primary-color: #4db6ac;
     --primary-color-light: #82e9de;
     --primary-color-dark: #00867d;
@@ -10,6 +13,8 @@
     --secondary-color: #bdbdbd;
     --secondary-color-light: #efefef;
     --secondary-color-dark: #8d8d8d;
+
+    --active-color: #f0f0f0;
 }
 
 #___gatsby {

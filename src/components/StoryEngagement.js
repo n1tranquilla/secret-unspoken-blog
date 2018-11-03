@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Share from '@material-ui/icons/Link'
-import Button from '@material-ui/core/Button'
+import Button from './Button/ButtonText'
 import styles from './StoryEngagement.module.css'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import MySnackbar from './MySnackbar'

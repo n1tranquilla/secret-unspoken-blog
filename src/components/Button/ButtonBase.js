@@ -4,14 +4,11 @@ import classNames from 'classnames'
 import styles from './ButtonBase.module.css'
 
 const ButtonBase = props => {
-    const { className, component: Component, ...rest } = props
-    const children = Component 
-        ? (<Component {...rest}>{props.children}</Component>)
-        : props.children
+    const { className, ...rest } = props
 
     return (
-        <button className={classNames(styles.btn,className)}>
-            { children }    
+        <button {...rest} className={classNames(styles.btn,className)}>
+            { props.children }    
         </button>
     )
 }
