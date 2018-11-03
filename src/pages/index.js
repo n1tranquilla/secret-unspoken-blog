@@ -6,7 +6,6 @@ import GetStarted from '../components/GetStarted'
 import Subscribe from '../components/Subscribe'
 import Hidden from '@material-ui/core/Hidden'
 import SecondaryContent from '../components/SecondaryContent'
-import FollowUs from '../components/FollowUs'
 
 const IndexPage = (props) => (
   <Layout>
@@ -14,11 +13,6 @@ const IndexPage = (props) => (
       <Column maxWidth='25vw'/>
     </Hidden>
     <Column>
-      <FollowUs 
-        twitterUrl={props.data.site.siteMetadata.twitterUrl}
-        facebookUrl={props.data.site.siteMetadata.facebookUrl}
-        instagramUrl={props.data.site.siteMetadata.instagramUrl}
-      />
       <div className="markdown-body" dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
       <GetStarted />
       <Hidden mdUp>
@@ -42,13 +36,6 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    site {
-      siteMetadata {
-        twitterUrl
-        facebookUrl
-        instagramUrl
-      }
-    }
     markdownRemark(frontmatter: { title: { eq: "mission" } }) {
       html
     }
