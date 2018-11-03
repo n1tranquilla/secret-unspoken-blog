@@ -1,0 +1,41 @@
+.btn {
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin: 0.25em;
+    border-radius: 0.25em;
+
+    background-color: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background-color 150ms;
+}
+.btn:hover,
+.btn:focus {
+    background-color: var(--active-color)
+}
+
+.btn--shadow {
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .2);
+}
+
+.btn--contained {
+    background-color: var(--primary-color)
+}
+
+.btn--contained:hover,
+.btn--contained:focus {
+    background-color: var(--primary-color-dark)
+}
+
+.btn--outlined {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color)
+}
+

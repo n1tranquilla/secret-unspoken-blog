@@ -1,22 +1,9 @@
 import React from 'react'
-import TextField from '@material-ui/core/TextField'
-import Button from '@material-ui/core/Button'
-import { withStyles } from '@material-ui/core/styles'
 import MySnackbar from './MySnackbar'
-
+import Button from './Button/ButtonOutlined'
 import addToMailchimp from 'gatsby-plugin-mailchimp'
-import sty from './Subscribe.module.css'
-
-const styles={
-    button: {
-        border: '1px solid #8d8d8d',
-        color: '#00867d',
-        '&:hover':{
-            backgroundColor: '#efefef',
-            border: '1px solid #8d8d8d'
-        }
-    }
-}
+import styles from './Subscribe.module.css'
+import TextField from './Input/TextField'
 
 class Subscribe extends React.Component {
 
@@ -46,24 +33,14 @@ class Subscribe extends React.Component {
 
     render(){
         return (
-            <div className={sty.container}>
-                <TextField
-                    id="email"
-                    label="Email"
-                    type="email"
-                    name="email"
-                    autoComplete="email"
-                    margin="normal"
-                    variant="outlined"
-                    className={this.props.classes.input}
+            <div className={styles.container}>
+                <TextField 
+                    type="email" 
                     value={this.state.email}
-                    onChange={this.handleChange}
+                    placeholder="email"
                 />
                 <Button 
-                    variant="outlined" 
-                    color="primary" 
-                    onClick={this.handleSubmit}
-                    classes={{root: this.props.classes.button}}>
+                    onClick={this.handleSubmit}>
                     Subscribe
                 </Button>
                 <MySnackbar msg={this.state.msg}/>
@@ -72,4 +49,4 @@ class Subscribe extends React.Component {
     }
 }
 
-export default withStyles(styles)(Subscribe)
+export default Subscribe
