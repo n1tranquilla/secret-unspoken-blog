@@ -4,17 +4,38 @@
     font-family: 'Karla', sans-serif;
 }
 
+html {
+    --primary-hue:174;
+    --secondary-hue: 0;
+
+    background-color: var(--background-color)
+}
+
 html,
 html[data-theme="light"]{
-    --primary-color: #4db6ac;
-    --primary-color-light: #82e9de;
-    --primary-color-dark: #00867d;
+    --primary-color: hsl(var(--primary-hue), 42%, 51%);
+    --primary-color-light: hsl(var(--primary-hue), 70%, 71%);
+    --primary-color-dark: hsl(var(--primary-hue), 100%, 26%);
 
-    --secondary-color: #bdbdbd;
-    --secondary-color-light: #efefef;
-    --secondary-color-dark: #8d8d8d;
+    --secondary-color: hsl(var(--secondary-hue), 0%, 74%);
+    --secondary-color-light: hsl(var(--secondary-hue), 0%, 94%);
+    --secondary-color-dark: hsl(var(--secondary-hue), 0%, 55%);
 
-    --active-color: #f0f0f0;
+    --active-color: hsl(var(--secondary-hue), 0%, 94%);
+    --background-color: white;
+}
+html[data-theme="dark"]{
+    --primary-color: hsl(var(--primary-hue), 42%, 25%);
+    --primary-color-light: hsl(var(--primary-hue), 70%, 35%);
+    --primary-color-dark: hsl(var(--primary-hue), 100%, 45%);
+
+    --secondary-color: hsl(var(--secondary-hue), 0%, 50%);
+    --secondary-color-light: hsl(var(--secondary-hue), 0%, 60%);
+    --secondary-color-dark: hsl(var(--secondary-hue), 0%, 70%);
+
+    --active-color: hsl(var(--secondary-hue), 0%, 6%);
+
+    --background-color: #f1f1f1;
 }
 
 #___gatsby {
