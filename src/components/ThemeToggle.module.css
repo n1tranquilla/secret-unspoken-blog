@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.name {
+    color: var(--background-color);
+}
+
+.name--small {
+    font-size: xx-small;
+}
+.name--medium {
+    font-size: 'x-small'
+}
+.name--large {
+    font-size: 'small'
+}

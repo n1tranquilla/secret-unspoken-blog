@@ -8,7 +8,17 @@
     width: calc(100%-2em);
 
     background-color: var(--primary-color);
-    border-top: 1em solid var(--primary-color-dark);
+}
+
+.top-bar {
+    background-color: var(--primary-color-dark);
+    width: calc(100%-2em);
+    padding: 1em;
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .nav-left,
@@ -37,4 +47,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.navLink{
+    color: var(--text-color);
 }

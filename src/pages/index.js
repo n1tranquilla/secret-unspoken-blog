@@ -6,6 +6,7 @@ import GetStarted from '../components/GetStarted'
 import Subscribe from '../components/Subscribe'
 import Hidden from '@material-ui/core/Hidden'
 import SecondaryContent from '../components/SecondaryContent'
+import BottomPadding from '../components/BottomPadding'
 
 const IndexPage = (props) => (
   <Layout>
@@ -17,6 +18,7 @@ const IndexPage = (props) => (
       <GetStarted />
       <Hidden mdUp>
         <hr/>
+        <BottomPadding />
         <SecondaryContent>
           <Subscribe/>
         </SecondaryContent>

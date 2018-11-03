@@ -15,10 +15,13 @@
     text-decoration: none;
 
     transition: background-color 150ms;
+
+    color: inherit;
+    font-size: medium;
 }
 .btn:hover,
 .btn:focus {
-    background-color: var(--active-color)
+    background-color: var(--secondary-color-light)
 }
 
 .btn--shadow {
@@ -35,7 +38,7 @@
 }
 
 .btn--outlined {
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color)
+    color: var(--primary-color-light);
+    border: 1px solid var(--primary-color-light)
 }
 

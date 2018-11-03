@@ -1,5 +1,5 @@
 .copyright {
-    color: black;
+    color: var(--text-color);
     opacity: 0.75;
     width: 100%;
 
