@@ -23,6 +23,7 @@ html[data-theme="light"]{
 
     --active-color: hsl(var(--secondary-hue), 0%, 94%);
     --background-color: white;
+    --text-color: #1f1f1f;
 }
 html[data-theme="dark"]{
     --primary-color: hsl(var(--primary-hue), 42%, 25%);
@@ -34,8 +35,16 @@ html[data-theme="dark"]{
     --secondary-color-dark: hsl(var(--secondary-hue), 0%, 70%);
 
     --active-color: hsl(var(--secondary-hue), 0%, 6%);
+    --background-color: #1f1f1f;
+    --text-color: white;
+}
 
-    --background-color: #f1f1f1;
+html.color-theme-in-transition,
+html.color-theme-in-transition *,
+html.color-theme-in-transition *:before,
+html.color-theme-in-transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
 }
 
 #___gatsby {
@@ -49,13 +58,13 @@ h1 {
     font-family: 'Unica One', serif;
     font-weight: 100;
     font-size: 40px;
-    color: black;
+    color: var(--text-color);
 }
 
 h2, h3, h4 {
     font-family: 'Spectral', serif;
     font-weight: 100;
-    color: black;
+    color: var(--text-color);
 }
 
 h2 {
@@ -87,4 +96,8 @@ hr {
     margin-top: 2em;
     width: 100%;
     min-height: 100px;
+}
+
+.markdown-body {
+    color: var(--text-color) !important;
 }

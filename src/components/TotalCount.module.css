@@ -1,5 +1,5 @@
 .count {
-    color: black;
+    color: var(--text-color);
     opacity: 0.75;
     padding: 0.5em;
 }
