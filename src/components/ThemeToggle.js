@@ -29,9 +29,15 @@ class ThemeToggle extends React.Component {
 
         if (!this.state.day){
             html.setAttribute("data-theme","dark")
+            localStorage.setItem("theme","dark")
         } else {
             html.setAttribute("data-theme","light")
+            localStorage.setItem("theme","light")
         }
+    }
+
+    componentDidMount(){
+        this.setState({ day: localStorage.getItem("theme")!=='dark' })
     }
 
     render(){

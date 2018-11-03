@@ -24,19 +24,21 @@ html[data-theme="light"]{
     --active-color: hsl(var(--secondary-hue), 0%, 94%);
     --background-color: white;
     --text-color: #1f1f1f;
+    --input-background: white;
 }
 html[data-theme="dark"]{
-    --primary-color: hsl(var(--primary-hue), 42%, 25%);
-    --primary-color-light: hsl(var(--primary-hue), 70%, 35%);
-    --primary-color-dark: hsl(var(--primary-hue), 100%, 45%);
+    --primary-color: hsl(var(--primary-hue), 42%, 15%);
+    --primary-color-light: hsl(var(--primary-hue), 70%, 20%);
+    --primary-color-dark: hsl(var(--primary-hue), 100%, 25%);
 
-    --secondary-color: hsl(var(--secondary-hue), 0%, 50%);
-    --secondary-color-light: hsl(var(--secondary-hue), 0%, 60%);
-    --secondary-color-dark: hsl(var(--secondary-hue), 0%, 70%);
+    --secondary-color: hsl(var(--secondary-hue), 0%, 15%);
+    --secondary-color-light: hsl(var(--secondary-hue), 0%, 20%);
+    --secondary-color-dark: hsl(var(--secondary-hue), 0%, 25%);
 
     --active-color: hsl(var(--secondary-hue), 0%, 6%);
     --background-color: #1f1f1f;
     --text-color: white;
+    --input-background: var(--secondary-color)
 }
 
 html.color-theme-in-transition,
@@ -100,4 +102,12 @@ hr {
 
 .markdown-body {
     color: var(--text-color) !important;
+}
+
+.markdown-body a {
+    color: var(--primary-color-dark) !important;
+}
+
+a {
+    color: var(--primary-color-dark);
 }

@@ -6,6 +6,8 @@
     border-radius: 0.25em;
 
     transition: border-color 150ms;
+    background-color: var(--input-background);
+    color: var(--text-color);
 }
 
 .input:focus{
