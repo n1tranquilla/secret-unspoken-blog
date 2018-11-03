@@ -25,11 +25,12 @@ html[data-theme="light"]{
     --background-color: white;
     --text-color: #1f1f1f;
     --input-background: white;
+    --link-color: var(--primary-color-dark)
 }
 html[data-theme="dark"]{
-    --primary-color: hsl(var(--primary-hue), 42%, 15%);
-    --primary-color-light: hsl(var(--primary-hue), 70%, 20%);
-    --primary-color-dark: hsl(var(--primary-hue), 100%, 25%);
+    --primary-color: hsl(var(--primary-hue), 42%, 25%);
+    --primary-color-light: hsl(var(--primary-hue), 70%, 30%);
+    --primary-color-dark: hsl(var(--primary-hue), 100%, 35%);
 
     --secondary-color: hsl(var(--secondary-hue), 0%, 15%);
     --secondary-color-light: hsl(var(--secondary-hue), 0%, 20%);
@@ -38,7 +39,8 @@ html[data-theme="dark"]{
     --active-color: hsl(var(--secondary-hue), 0%, 6%);
     --background-color: #1f1f1f;
     --text-color: white;
-    --input-background: var(--secondary-color)
+    --input-background: var(--secondary-color);
+    --link-color: var(--primary-color-light)
 }
 
 html.color-theme-in-transition,
@@ -105,9 +107,9 @@ hr {
 }
 
 .markdown-body a {
-    color: var(--primary-color-dark) !important;
+    color: var(--link-color) !important;
 }
 
 a {
-    color: var(--primary-color-dark);
+    color: var(--link-color);
 }
