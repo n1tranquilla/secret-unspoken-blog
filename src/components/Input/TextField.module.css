@@ -8,7 +8,7 @@
     transition: border-color 150ms;
     background-color: var(--input-background);
     color: var(--text-color);
-    font-size: medium;
+    font-size: small;
 }
 
 .input:focus{

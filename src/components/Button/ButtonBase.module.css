@@ -17,7 +17,7 @@
     transition: background-color 150ms;
 
     color: inherit;
-    font-size: medium;
+    font-size: small;
 }
 .btn:hover,
 .btn:focus {
