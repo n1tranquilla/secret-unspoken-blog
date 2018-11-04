@@ -16,7 +16,7 @@ const sizeToClass={
 class ThemeToggle extends React.Component {
 
     state={
-        day: true
+        day: localStorage.getItem("theme")!=='dark' 
     }
 
     toggleTheme = () => this.setState({ day: !this.state.day })
@@ -37,7 +37,8 @@ class ThemeToggle extends React.Component {
     }
 
     componentDidMount(){
-        this.setState({ day: localStorage.getItem("theme")!=='dark' })
+        const html = document.documentElement
+        html.setAttribute("data-theme",this.state.day ? "light" : "dark")
     }
 
     render(){
