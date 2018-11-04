@@ -2,14 +2,53 @@
     margin:0;
     padding: 0;
     font-family: 'Karla', sans-serif;
+}
 
-    --primary-color: #4db6ac;
-    --primary-color-light: #82e9de;
-    --primary-color-dark: #00867d;
+html {
+    --primary-hue:174;
+    --secondary-hue: 0;
 
-    --secondary-color: #bdbdbd;
-    --secondary-color-light: #efefef;
-    --secondary-color-dark: #8d8d8d;
+    background-color: var(--background-color)
+}
+
+html,
+html[data-theme="light"]{
+    --primary-color: hsl(var(--primary-hue), 42%, 51%);
+    --primary-color-light: hsl(var(--primary-hue), 70%, 71%);
+    --primary-color-dark: hsl(var(--primary-hue), 100%, 26%);
+
+    --secondary-color: hsl(var(--secondary-hue), 0%, 74%);
+    --secondary-color-light: hsl(var(--secondary-hue), 0%, 94%);
+    --secondary-color-dark: hsl(var(--secondary-hue), 0%, 55%);
+
+    --active-color: hsl(var(--secondary-hue), 0%, 94%);
+    --background-color: white;
+    --text-color: #1f1f1f;
+    --input-background: white;
+    --link-color: var(--primary-color-dark)
+}
+html[data-theme="dark"]{
+    --primary-color: hsl(var(--primary-hue), 42%, 25%);
+    --primary-color-light: hsl(var(--primary-hue), 70%, 30%);
+    --primary-color-dark: hsl(var(--primary-hue), 100%, 35%);
+
+    --secondary-color: hsl(var(--secondary-hue), 0%, 15%);
+    --secondary-color-light: hsl(var(--secondary-hue), 0%, 20%);
+    --secondary-color-dark: hsl(var(--secondary-hue), 0%, 25%);
+
+    --active-color: hsl(var(--secondary-hue), 0%, 6%);
+    --background-color: #1f1f1f;
+    --text-color: white;
+    --input-background: var(--secondary-color);
+    --link-color: var(--primary-color-light)
+}
+
+html.color-theme-in-transition,
+html.color-theme-in-transition *,
+html.color-theme-in-transition *:before,
+html.color-theme-in-transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
 }
 
 #___gatsby {
@@ -23,13 +62,13 @@ h1 {
     font-family: 'Unica One', serif;
     font-weight: 100;
     font-size: 40px;
-    color: black;
+    color: var(--text-color);
 }
 
 h2, h3, h4 {
     font-family: 'Spectral', serif;
     font-weight: 100;
-    color: black;
+    color: var(--text-color);
 }
 
 h2 {
@@ -61,4 +100,16 @@ hr {
     margin-top: 2em;
     width: 100%;
     min-height: 100px;
+}
+
+.markdown-body {
+    color: var(--text-color) !important;
+}
+
+.markdown-body a {
+    color: var(--link-color) !important;
+}
+
+a {
+    color: var(--link-color);
 }

@@ -1,10 +1,12 @@
-.copyright {
-    color: var(--text-color);
-    opacity: 0.75;
-    width: 100%;
-
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-size: small;
+    opacity: 0.75;
+
     height: 2em;
+
+    color: var(--text-color);
 }

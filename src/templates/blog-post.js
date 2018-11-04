@@ -26,8 +26,8 @@ export default ({ data, location, pageContext }) => {
             />
             <StoryEngagement url={location.href}/>
             <div className="markdown-body" dangerouslySetInnerHTML={{ __html: post.html }} />
-            { next && <PostLink prefix="Next: " to={next.fields.slug}>{next.frontmatter.title}</PostLink> }
-            { prev && <PostLink prefix="Last: " to={prev.fields.slug}>{prev.frontmatter.title}</PostLink> }
+            { next && <PostLink isNext={true} to={next.fields.slug}>{next.frontmatter.title}</PostLink> }
+            { prev && <PostLink isNext={false} to={prev.fields.slug}>{prev.frontmatter.title}</PostLink> }
             <Disqus.DiscussionEmbed shortname={siteMeta.shortname} config={disqusConfig}/>
         </Column>
     </Layout>

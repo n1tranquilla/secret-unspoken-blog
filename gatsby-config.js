@@ -7,6 +7,7 @@ module.exports = {
     shortname: 'secret-unspoken',
     twitterUrl: 'https://twitter.com/SecretUnspoken1',
     facebookUrl: 'https://www.facebook.com/secretunspoken',
+    instagramUrl: 'https://www.instagram.com/secretunspoken',
     gaTrackingId: 'UA-127453671-1'
   },
   plugins: [

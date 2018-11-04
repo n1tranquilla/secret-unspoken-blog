@@ -7,6 +7,8 @@ import CopyrightNotice from './CopyrightNotice'
 import GoogleAnalyticsDisclaimer from './GoogleAnalyticsDisclaimer'
 import { Location } from '@reach/router'
 import BottomPadding from './BottomPadding'
+import Support from './Support'
+import FollowUs from './FollowUs'
 
 import { graphql, StaticQuery } from 'gatsby'
 import Hidden from '@material-ui/core/Hidden'
@@ -24,6 +26,9 @@ const Layout = props => (
                     tagline,
                     description
                     gaTrackingId
+                    twitterUrl
+                    facebookUrl
+                    instagramUrl
                 }
             }
         }`
@@ -53,10 +58,17 @@ const Layout = props => (
                 <div className={styles.layout}>
                     { props.children }
                 </div>
+                <BottomPadding />
+                <FollowUs 
+                    twitterUrl={data.site.siteMetadata.twitterUrl}
+                    facebookUrl={data.site.siteMetadata.facebookUrl}
+                    instagramUrl={data.site.siteMetadata.instagramUrl}
+                />
                 <CopyrightNotice/>
+                <Support />
                 <GoogleAnalyticsDisclaimer gaTrackingId={data.site.siteMetadata.gaTrackingId}/>
+                <BottomPadding />
                 <Hidden mdUp>
-                    <BottomPadding />
                     <Location>
                         { ({ location }) => <MobileFooter location={location}/> }
                     </Location>

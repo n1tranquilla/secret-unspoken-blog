@@ -39,13 +39,13 @@ class MobileFooter extends React.Component {
     render(){
         return (
             <BottomNavigation
-                className={styles.bottomNav}
+                classes={{ root: styles.bottomNav }}
                 value={this.state.value}
                 onChange={this.handleChange}
                 showLabels>
-                <BottomNavigationAction classes={{selected: styles.selected}} label="Home" icon={<Home />} component={Link} to="/"/>
-                <BottomNavigationAction classes={{selected: styles.selected}} label="Posts" icon={<Blog />} component={Link} to="/posts"/>
-                <BottomNavigationAction classes={{selected: styles.selected}} label="Me" icon={<Me />} component={Link} to="/me"/>
+                <BottomNavigationAction classes={{wrapper: styles.wrapper, selected: styles.selected}} label="Home" icon={<Home />} component={Link} to="/"/>
+                <BottomNavigationAction classes={{wrapper: styles.wrapper, selected: styles.selected}} label="Posts" icon={<Blog />} component={Link} to="/posts"/>
+                <BottomNavigationAction classes={{wrapper: styles.wrapper, selected: styles.selected}} label="Me" icon={<Me />} component={Link} to="/me"/>
             </BottomNavigation>
         
         )
