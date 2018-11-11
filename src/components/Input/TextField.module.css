@@ -2,7 +2,7 @@
     padding: 1em;
     margin: 0.25em;
 
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--primary-color-dark);
     border-radius: 0.25em;
 
     transition: border-color 150ms;

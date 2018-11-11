@@ -38,7 +38,7 @@
 }
 
 .btn--outlined {
-    color: var(--primary-color-light);
-    border: 1px solid var(--primary-color-light)
+    color: var(--primary-color-dark);
+    border: 1px solid var(--primary-color-dark)
 }
 
