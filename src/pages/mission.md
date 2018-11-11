@@ -1,13 +1,13 @@
 ---
 title: "mission"
 type: "page"
-date: "2018-10-17"
+date: "2018-11-11"
 ---
-The goal of this blog is to talk about sexual issues that men commonly experience. In the tagline for the site 
+The goal of this blog is facilitate building a better community for men by talking openly about issues that matter.
 
-> Secret Unspoken: The secret most men have
+> Secret Unspoken: Facilitating better community for men
     
-I share my belief that most men have aspects of their sexuality that they are ashamed of, feel they cannot share for fear of being discovered, and remain stuck in their struggles. The truth is that these issues are commonly experienced by most men. 
+I hint at my belief that most men have aspects of their sexuality that they are ashamed of, feel they cannot share for fear of being discovered, and remain stuck in their struggles. The truth is that these issues are commonly experienced by most men. 
 
 But why here? In my experience, the kind of issues I will be discussing here are either 
 * not being talked about elsewhere, where you might reasonably expect them to be (ie. family or church). 

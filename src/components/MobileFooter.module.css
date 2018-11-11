@@ -12,5 +12,5 @@
 }
 
 .selected {
-    color: var(--primary-color-dark);
+    color: var(--link-color);
 }
