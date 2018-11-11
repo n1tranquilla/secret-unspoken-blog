@@ -7,10 +7,10 @@
     background-color: var(--background-color) !important;
 }
 
-.wrapper:not(.selected) > *{
+.wrapper{
     color: var(--text-color)
 }
 
-.selected > *{
-    color: var(--primary-color);
+.selected {
+    color: var(--primary-color-dark);
 }
