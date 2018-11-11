@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Secret Unspoken',
-    tagline: 'The secret most men have',
+    tagline: 'Facilitating better community for men',
     description: 'A blog discussing sexual addiction among men',
     siteUrl: 'https://secret-unspoken.github.io',
     shortname: 'secret-unspoken',
