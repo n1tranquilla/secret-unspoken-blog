@@ -17,7 +17,7 @@ const handleClick = () => {
 
 const GetStarted = props => (
     <div className={styles.container}>
-        <Link className={styles.link} onClick={handleClick} to="/posts">
+        <Link className={styles.link} onClick={handleClick} to="/posts/so-what-are-we-hiding-and-why/">
             <ButtonContained>
                 Get Started &#8594;
             </ButtonContained>
