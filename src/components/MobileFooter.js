@@ -10,6 +10,8 @@ import { head, reject, isEmpty, split, compose } from 'ramda'
 
 import styles from './MobileFooter.module.css'
 
+import classNames from 'classnames'
+
 const getHeadPathname = compose(
     head,
     reject(isEmpty),
@@ -43,9 +45,30 @@ class MobileFooter extends React.Component {
                 value={this.state.value}
                 onChange={this.handleChange}
                 showLabels>
-                <BottomNavigationAction classes={{wrapper: styles.wrapper, selected: styles.selected}} label="Home" icon={<Home />} component={Link} to="/"/>
-                <BottomNavigationAction classes={{wrapper: styles.wrapper, selected: styles.selected}} label="Posts" icon={<Blog />} component={Link} to="/posts"/>
-                <BottomNavigationAction classes={{wrapper: styles.wrapper, selected: styles.selected}} label="Me" icon={<Me />} component={Link} to="/me"/>
+                <BottomNavigationAction 
+                    classes={{
+                        wrapper: classNames(styles.wrapper,this.state.value===0 ? styles.selected : null)
+                    }} 
+                    label="Home" 
+                    icon={<Home color="inherit"/>} 
+                    component={Link} 
+                    to="/"/>
+                <BottomNavigationAction 
+                    classes={{
+                        wrapper: classNames(styles.wrapper,this.state.value===1 ? styles.selected : null)
+                    }} 
+                    label="Posts" 
+                    icon={<Blog color="inherit"/>} 
+                    component={Link} 
+                    to="/posts"/>
+                <BottomNavigationAction 
+                    classes={{
+                        wrapper: classNames(styles.wrapper,this.state.value===2 ? styles.selected : null)
+                    }} 
+                    label="Me" 
+                    icon={<Me color="inherit"/>} 
+                    component={Link} 
+                    to="/me"/>
             </BottomNavigation>
         
         )
