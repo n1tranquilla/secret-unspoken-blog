@@ -15,7 +15,7 @@ But why here? In my experience, the kind of issues I will be discussing here are
 My hope is that this blog will play a part in enabling men to talk about these issues in a way that builds community, dissipates the shame, and leads to personal freedom.
 
 What can you do?
-1. [Subscribe](https://secret-unspoken.github.io/subscribe) to get notified when there is new content.
+1. [Subscribe](/subscribe) to get notified when there is new content.
 2. Participate in the comments. Want to stay anonymous? See [Disqus guest commenting](https://help.disqus.com/commenting/guest-commenting)
 3. [Reach out to me](mailto:secretunspoken@gmail.com). I'm always willing to connect with people.
 

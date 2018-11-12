@@ -110,6 +110,12 @@ hr {
     color: var(--link-color) !important;
 }
 
+.markdown-body blockquote {
+    font-size: x-large;
+    margin-bottom: 1em !important;
+    margin-top: 1em !important;
+}
+
 a {
     color: var(--link-color);
 }
