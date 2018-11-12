@@ -29,4 +29,4 @@ Aside from the first, two of my other friends attended, either before me, or aft
 
 One of the cores to the success has been community around this issue. Part of what I would love to see come of sharing, is to challenge you, inspire you, and invite you to be a part of building a better community around this issue. Statistically, most men find themselves stuck in this issue, but it is powerful enough to keep us isolated from each other. At a later time, I will share my vision with you guys of what I hope to see.
 
-Stay tuned for Part 2, where I’ll elaborate on the recovery aspect. [Subscribe](https://secret-unspoken.github.io/subscribe) and follow our updates on social media (links in footer).
+Stay tuned for Part 2, where I’ll elaborate on the recovery aspect. [Subscribe](/subscribe) and follow our updates on social media (links in footer).
