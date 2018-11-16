@@ -1,36 +1,59 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import MySnackbar from './MySnackbar'
+import IconButton from '@material-ui/core/IconButton'
+import CloseIcon from '@material-ui/icons/Close'
 import { Link } from 'gatsby'
 
+import styles from './AddToHomeScreen.module.css'
 
 class AddToHomeScreen extends React.Component {
 
     state={
         deferredPrompt: null,
-        notify: false,
-        forceNone: true//localStorage.getItem('a2hs-chosen')==='true'
+        display: false
     }
 
     handleAdd = (e) => {
         e.preventDefault()
-
-        setTimeout(()=>this.setState({
-            forceNone: true,
-            notify: false
-        }),2000)
 
         const { deferredPrompt } = this.state
         deferredPrompt.prompt()
 
         deferredPrompt.userChoice
             .then((choiceResult) => {
-                localStorage.setItem('a2hs-chosen','true')
+                const chosen = choiceResult.outcome==='accepted'
+                localStorage.setItem('a2hs',chosen ? 'true' : 'false')
+                localStorage.setItem('a2hs-decision','made')
+                if (window.ga){
+                    window.ga("send", "event", {
+                        eventCategory: "Engagement",
+                        eventAction: "a2hs",
+                        eventLabel: "Engagement Campaign",
+                        eventValue: chosen ? 1 : 0
+                    })
+                }
                 this.setState({ 
                     deferredPrompt: null ,
                     notify: false
                 })
             });
     }
+
+    handleClose = () => {
+        localStorage.setItem('a2hs-decision','made')
+        this.setState({ display: false })
+    }
+
+    createMsg = () => (
+        <div className={styles.container}>
+            <Link to="/#" className={styles.link} onClick={this.handleAdd}>Add Secret Unspoken to homescreen</Link>
+            <IconButton>
+                <CloseIcon fontSize="small" onClick={this.handleClose}/>
+            </IconButton>
+        </div>
+    )
 
     componentDidMount(){
 
@@ -43,18 +66,28 @@ class AddToHomeScreen extends React.Component {
             this.setState({ deferredPrompt: e })
         })
 
-        setTimeout(()=>this.setState({ notify: true}),10000)
+        if (localStorage.getItem('a2hs-decision')==='made') return 
+
+        setTimeout(
+            ()=>this.setState({ display: true}),
+            this.props.after
+        )
     }
 
     render(){
-
-        if (this.state.forceNone) return null
-
-        return this.state.notify
-            ? (<MySnackbar duration={Infinity} msg={<Link onClick={this.handleAdd}>Add Secret Unspoken to homescreen</Link>} />)
+        return this.state.display
+            ? (<MySnackbar duration={Infinity} msg={this.createMsg()} />)
             : null
 
     }
+}
+
+AddToHomeScreen.propTypes={
+    after: PropTypes.number.isRequired
+}
+
+AddToHomeScreen.defaultProps={
+    after: 0
 }
 
 export default AddToHomeScreen

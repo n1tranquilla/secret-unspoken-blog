@@ -6,6 +6,7 @@ import Disqus from 'disqus-react'
 import StoryEngagement from "../components/StoryEngagement"
 import PostHeader from '../components/PostHeader'
 import PostLink from "../components/PostLink"
+import AddToHomeScreen from '../components/AddToHomeScreen'
 
 export default ({ data, location, pageContext }) => {
   const siteMeta = data.site.siteMetadata
@@ -18,6 +19,7 @@ export default ({ data, location, pageContext }) => {
   const { prev, next } = pageContext
   return (
     <Layout>
+        <AddToHomeScreen after={15000} />
         <Column>
             <PostHeader 
               title={post.frontmatter.title} 
