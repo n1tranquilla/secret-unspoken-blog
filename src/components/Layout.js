@@ -9,6 +9,7 @@ import { Location } from '@reach/router'
 import BottomPadding from './BottomPadding'
 import Support from './Support'
 import FollowUs from './FollowUs'
+import AddToHomeScreen from './AddToHomeScreen'
 
 import { graphql, StaticQuery } from 'gatsby'
 import Hidden from '@material-ui/core/Hidden'
@@ -36,13 +37,19 @@ const Layout = props => (
         render={data => (
             <React.Fragment>
                 <Helmet>
+                    <html lang="en" />
+                    <meta charset="utf-8" />
+                    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+                    
                     <title>{data.site.siteMetadata.title}</title>   
+                    <meta name="Description" content={data.site.siteMetadata.description}/>
+
+                    <meta name="flattr:id" content="vlp70e" />
+                    
                     <link href="https://fonts.googleapis.com/css?family=Unica+One&text=Secret%20Unspoken" rel="stylesheet" />
                     <link href="https://fonts.googleapis.com/css?family=Spectral|Karla" rel="stylesheet"/>
-                    <meta name="Description" content={data.site.siteMetadata.description}/>
-                    <meta name="flattr:id" content="vlp70e" />
-                    <html lang="en" />
                 </Helmet>
+                <AddToHomeScreen />
                 <Hidden smDown>
                     <DesktopHeader 
                         title={data.site.siteMetadata.title}

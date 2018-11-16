@@ -6,6 +6,7 @@ const MySnackbar = props => (
     <React.Fragment>
         <Hidden smDown>
             <Snackbar
+                autoHideDuration={props.duration}
                 anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
                 open={props.msg}
                 ContentProps={{
@@ -16,6 +17,7 @@ const MySnackbar = props => (
         </Hidden>
         <Hidden mdUp>
             <Snackbar
+                autoHideDuration={props.duration}
                 anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
                 open={props.msg}
                 ContentProps={{
@@ -26,5 +28,9 @@ const MySnackbar = props => (
         </Hidden>
     </React.Fragment>
 )
+
+MySnackbar.defaultProps={
+    duration: 4000
+}
 
 export default MySnackbar
