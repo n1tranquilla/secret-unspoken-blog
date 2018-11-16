@@ -8,11 +8,16 @@ class AddToHomeScreen extends React.Component {
     state={
         deferredPrompt: null,
         notify: false,
-        forceNone: false
+        forceNone: true//localStorage.getItem('a2hs-chosen')==='true'
     }
 
     handleAdd = (e) => {
         e.preventDefault()
+
+        setTimeout(()=>this.setState({
+            forceNone: true,
+            notify: false
+        }),2000)
 
         const { deferredPrompt } = this.state
         deferredPrompt.prompt()
@@ -28,10 +33,6 @@ class AddToHomeScreen extends React.Component {
     }
 
     componentDidMount(){
-
-        if(localStorage.getItem('a2hs-chosen')==='true') this.setState({
-            forceNone: true
-        })
 
         if (!window && !window.addEventListener) return 
 
