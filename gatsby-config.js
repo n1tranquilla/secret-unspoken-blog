@@ -77,16 +77,35 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-plugin-favicon`,
       options: {
-        name: `Secret Unspoken`,
-        short_name: `SU Blog`,
-        start_url: `/`,
-        background_color: `#008B79`,
-        theme_color: `#FFFFFF`,
-        display: `standalone`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
-      },
+        logo: "./src/favicon.png",
+
+        appName: "Secret Unspoken", // Inferred with your package.json
+        appDescription: null,
+        developerName: null,
+        developerURL: null,
+        dir: 'auto',
+        lang: 'en-US',
+        background: '#245F57',
+        theme_color: '#000000',
+        display: 'standalone',
+        orientation: 'portrait',
+        start_url: '/?homescreen=1',
+        version: '1.0',
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          opengraph: false,
+          twitter: false,
+          yandex: false,
+          windows: false
+        }
+      }
     },
     `gatsby-plugin-offline`
   ]

@@ -32,11 +32,11 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "rm -rf public && gatsby build",
     "serve": "gatsby serve",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "deploy": "rm -rf node_modules/gh-pages/.cache && gatsby build && gh-pages -o target -d public -b master",
+    "deploy": "rm -rf public && rm -rf node_modules/gh-pages/.cache && gatsby build && gh-pages -o target -d public -b master",
     "dev-m": "gatsby develop -H 0.0.0.0 -p 8000"
   },
   "devDependencies": {
