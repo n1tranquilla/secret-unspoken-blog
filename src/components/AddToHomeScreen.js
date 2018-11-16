@@ -8,6 +8,7 @@ class AddToHomeScreen extends React.Component {
     state={
         deferredPrompt: null,
         notify: false,
+        forceNone: true
     }
 
     handleAdd = (e) => {
@@ -28,6 +29,10 @@ class AddToHomeScreen extends React.Component {
 
     componentDidMount(){
 
+        if(localStorage.getItem('a2hs-chosen')==='true') this.setState({
+            forceNone: true
+        })
+
         if (!window && !window.addEventListener) return 
 
         window.addEventListener('beforeinstallprompt', (e) => {
@@ -42,7 +47,7 @@ class AddToHomeScreen extends React.Component {
 
     render(){
 
-        if(localStorage.getItem('a2hs-chosen')==='true') return null
+        if (this.state.forceNone) return null
 
         return this.state.notify
             ? (<MySnackbar duration={Infinity} msg={<Link onClick={this.handleAdd}>Add Secret Unspoken to homescreen</Link>} />)
