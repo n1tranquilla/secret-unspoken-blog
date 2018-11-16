@@ -8,7 +8,7 @@ class AddToHomeScreen extends React.Component {
     state={
         deferredPrompt: null,
         notify: false,
-        forceNone: true
+        forceNone: false
     }
 
     handleAdd = (e) => {
