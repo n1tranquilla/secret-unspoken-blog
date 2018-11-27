@@ -3,6 +3,7 @@ title: "From the other side"
 date: "2018-11-27"
 type: "post"
 ---
+
 _Guest blogging for Secret Unspoken is Nikki. Nikki is my courageous partner and adventurer in life. She has experience on the issue as an affected spouse, and will be telling her own story from discovery throughout recovery. It is my hope that her story will bring spouses into the discussion, to challenge, inspire, and bring change into the lives of couples._
 
 ---
@@ -21,7 +22,7 @@ Fast forward to January 2016. Nathan had told me about his conversation with his
 
 He then mentioned a conference in the states that could help him in the way he needed. I was pretty hesitant at first.
 1. How much would a weekend change a person, really? I was pretty skeptical. 
-2. Tt was pretty pricey just for three days, plus the airfare and hotels. We just didn’t have the finances to pull it off. 
+2. It was pretty pricey just for three days, plus the airfare and hotels. We just didn’t have the finances to pull it off. 
 
 But Nathan was insistent. In fact, I had never seen him so sure and passionate about doing something that, so I thought that if he comes out of it with any sort of help for himself, maybe it’s not a bad idea. I agreed and off he went. 
 
@@ -42,4 +43,6 @@ When I came home, the first thing I did was hug my husband. I knew the journey w
 For me, whenever Nathan would "act out" or turn to his “drug”, the ideas or thoughts that I would have in order to cope were denial and apathy. But really what I was feeling was anger and resentment. Anger that he’s choose that over me, that he wouldn’t try and fix the problem or that he would try and hide from me. In his distance from me, I knew he had done something wrong; why couldn’t he just tell me? The ideas then that would follow this line of thought was that I was unworthy to be loved or cherished and I would cope by shopping (spending money that we didn’t have - which would always end in a fight) or I would wish for a different life. Now these things don’t sound so bad, but in reality, spending money that i knew we didn’t have would always set Nathan off and my thought life in wanting a different life was certainly not pure. And my apathy towards this made me almost numb to the pain I was causing myself in our marriage. In reaction to Nathan acting out, not only would these thoughts plague me but my attitude was unhelpful and dysfunctional. I would ice Nathan out and punish him by abstaining from any type of relationship; trying to make him feel my pain by giving him the cold shoulder to try and make him feel even more guilty for how he made me feel. This could go on for hours to days at a time. I thought i was justified in my behaviour. But all it did was push away the connection I so desperately wanted with my husband. 
 
 Almost three years after going to this conference now, and my perspective on people has changed. I used to think that people were incapable of change. My cynicism knew no bounds when it came to people. I just had never seen true change demonstrated in way that was believable and lasting. Understand, both Nathan and I are not perfect now. We still struggle in going backwards to how we used to cope with problems. Believe me, this addiction can permeate through every aspect of your relationship and how you cope with issues with each other. And likewise the healing does not stop at just the behvaiour, but is something that filters into all areas of life.
+
+After all the pain and choas of the journey, I'm proud of the changes that my husband has made, and the sacrifice he has been willing to make to improve himself and our marriage.
 
