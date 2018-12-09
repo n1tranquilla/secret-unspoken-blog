@@ -6,12 +6,28 @@ import ToggleOnIcon from '@material-ui/icons/ToggleOn'
 import styles from './ThemeToggle.module.css'
 
 import classNames from 'classnames'
+import { IconButton } from '@material-ui/core';
 
 const sizeToClass={
     small: 'nameSmall',
     medium: 'nameMedium',
     large: 'nameLarge'
 }
+
+if (document.documentElement){
+    const html = document.documentElement
+    const theme = localStorage.getItem("theme")!=='dark' ? "light" : "dark"
+    html.setAttribute("data-theme",theme)
+    if (window.ga){
+        window.ga("send", "event", {
+            eventCategory: "Engagement",
+            eventAction: theme,
+            eventLabel: "Theme on load",
+            eventValue: 1
+        })
+    }
+}
+
  
 class ThemeToggle extends React.Component {
 
@@ -27,37 +43,31 @@ class ThemeToggle extends React.Component {
         html.classList.add("color-theme-in-transition")
         setTimeout(()=>html.classList.remove("color-theme-in-transition"),1000)
 
-        if (!this.state.day){
-            html.setAttribute("data-theme","dark")
-            localStorage.setItem("theme","dark")
-        } else {
-            html.setAttribute("data-theme","light")
-            localStorage.setItem("theme","light")
-        }
-    }
+        const nextTheme=!this.state.day ? "dark" : "light"
 
-    componentDidMount(){
-        const html = document.documentElement
-        html.setAttribute("data-theme",this.state.day ? "light" : "dark")
+        html.setAttribute("data-theme",nextTheme)
+        localStorage.setItem("theme",nextTheme)
+        if (window.ga){
+            window.ga("send", "event", {
+                eventCategory: "Engagement",
+                eventAction: nextTheme,
+                eventLabel: "Theme switch",
+                eventValue: 1
+            })
+        }
     }
 
     render(){
         const cls = sizeToClass[this.props.size]
-        console.log(this.props.size,cls,styles[cls])
+        const Icon = this.state.day ? ToggleOffIcon : ToggleOnIcon
+        const theme = this.state.day ? "light" : "dark"
         return (
             <div className={styles.container}>
-                { this.state.day && (
-                    <React.Fragment>
-                        <span className={classNames(styles.name,styles[cls])}>light</span>
-                        <ToggleOffIcon fontSize={this.props.size} onClick={this.toggleTheme}/>
-                    </React.Fragment>
-                )}
-                { !this.state.day && (
-                    <React.Fragment>
-                        <span className={classNames(styles.name,styles[cls])}>dark</span>
-                        <ToggleOnIcon fontSize={this.props.size} onClick={this.toggleTheme} />
-                    </React.Fragment>
-                )}
+                <span className={classNames(styles.name,styles[cls])}>Theme <span className={styles.theme}>({theme})</span></span>
+                <IconButton onClick={this.toggleTheme}>
+                    <Icon color="inherit" fontSize={this.props.size}/>
+                </IconButton>
+                
             </div>
         )
     }

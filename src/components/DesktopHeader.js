@@ -4,10 +4,11 @@ import { Link } from 'gatsby'
 
 import styles from './DesktopHeader.module.css'
 import ThemeToggle from './ThemeToggle';
+import MorePopover from './MorePopover';
 
 const DesktopHeader = props => (
     <React.Fragment>
-        <div className={styles.topBar}><ThemeToggle /></div>
+        <div className={styles.topBar} />
         <nav className={styles.nav}>
             <div className={styles.navLeft}></div>
             <div className={styles.navCenter}>
@@ -20,10 +21,12 @@ const DesktopHeader = props => (
                 <NavLink className={styles.navLink} to="/">Home</NavLink>
                 <NavLink className={styles.navLink} to="/posts">Posts</NavLink>
                 <NavLink className={styles.navLink} to="/me">Me</NavLink>
+                <MorePopover>
+                    <ThemeToggle />
+                </MorePopover>
             </div>
         </nav>
     </React.Fragment>
-    
 )
 
 export default DesktopHeader

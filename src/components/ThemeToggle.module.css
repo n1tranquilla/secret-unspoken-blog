@@ -4,8 +4,12 @@
     align-items: center;
 } 
 
+.theme {
+    font-size: small;
+}
+
 .name {
-    color: var(--background-color);
+    margin: 0.5em
 }
 
 .name--small {
