@@ -3,8 +3,8 @@ import NavLink from './NavLink'
 import { Link } from 'gatsby'
 
 import styles from './DesktopHeader.module.css'
-import ThemeToggle from './ThemeToggle';
-import MorePopover from './MorePopover';
+import ThemeToggle from './Theme/ThemeToggle'
+import MorePopover from './MorePopover'
 
 const DesktopHeader = props => (
     <React.Fragment>

@@ -14,22 +14,6 @@ const sizeToClass={
     large: 'nameLarge'
 }
 
-
-
-if (window.document){
-    const html = document.documentElement
-    const theme = localStorage.getItem("theme")!=='dark' ? "light" : "dark"
-    html.setAttribute("data-theme",theme)
-    if (window.ga){
-        window.ga("send", "event", {
-            eventCategory: "Engagement",
-            eventAction: theme,
-            eventLabel: "Theme on load",
-            eventValue: 1
-        })
-    }
-}
-
  
 class ThemeToggle extends React.Component {
 

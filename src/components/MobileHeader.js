@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import styles from './MobileHeader.module.css'
 import desktopStyles from './DesktopHeader.module.css'
 
-import ThemeToggle from './ThemeToggle'
+import ThemeToggle from './Theme/ThemeToggle'
 import MorePopover from './MorePopover'
 
 const MobileHeader = props => (
