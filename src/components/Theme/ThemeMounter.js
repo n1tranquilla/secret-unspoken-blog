@@ -20,3 +20,5 @@ class ThemeMounter extends React.Component {
         return null
     }
 }
+
+export default ThemeMounter

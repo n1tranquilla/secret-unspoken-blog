@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import ToggleOffIcon from '@material-ui/icons/ToggleOff'
 import ToggleOnIcon from '@material-ui/icons/ToggleOn'
 
-import styles from './Theme/ThemeToggle.module.css'
+import styles from './ThemeToggle.module.css'
 
 import classNames from 'classnames'
 import { IconButton } from '@material-ui/core';
