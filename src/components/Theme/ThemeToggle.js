@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import ToggleOffIcon from '@material-ui/icons/ToggleOff'
 import ToggleOnIcon from '@material-ui/icons/ToggleOn'
 
-import styles from './Theme/ThemeToggle.module.css'
+import styles from './ThemeToggle.module.css'
 
 import classNames from 'classnames'
 import { IconButton } from '@material-ui/core';
@@ -12,22 +12,6 @@ const sizeToClass={
     small: 'nameSmall',
     medium: 'nameMedium',
     large: 'nameLarge'
-}
-
-
-
-if (window.document){
-    const html = document.documentElement
-    const theme = localStorage.getItem("theme")!=='dark' ? "light" : "dark"
-    html.setAttribute("data-theme",theme)
-    if (window.ga){
-        window.ga("send", "event", {
-            eventCategory: "Engagement",
-            eventAction: theme,
-            eventLabel: "Theme on load",
-            eventValue: 1
-        })
-    }
 }
 
  

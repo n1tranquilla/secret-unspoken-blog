@@ -1,0 +1,13 @@
+.content {
+    margin: 0.5em;
+    padding: 0.5em;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}

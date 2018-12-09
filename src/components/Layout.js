@@ -9,6 +9,7 @@ import { Location } from '@reach/router'
 import BottomPadding from './BottomPadding'
 import Support from './Support'
 import FollowUs from './FollowUs'
+import ThemeMounter from './Theme/ThemeMounter'
 
 import { graphql, StaticQuery } from 'gatsby'
 import Hidden from '@material-ui/core/Hidden'
@@ -60,6 +61,7 @@ const Layout = props => (
                         subtitle={data.site.siteMetadata.tagline}
                     />
                 </Hidden>
+                <ThemeMounter />
                 <div className={styles.layout}>
                     { props.children }
                 </div>
