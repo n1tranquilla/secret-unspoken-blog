@@ -1,19 +1,8 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import ToggleOffIcon from '@material-ui/icons/ToggleOff'
-import ToggleOnIcon from '@material-ui/icons/ToggleOn'
 
-import styles from './ThemeToggle.module.css'
+import HighlightIcon from '@material-ui/icons/Highlight'
 
-import classNames from 'classnames'
-import { IconButton } from '@material-ui/core';
-
-const sizeToClass={
-    small: 'nameSmall',
-    medium: 'nameMedium',
-    large: 'nameLarge'
-}
-
+import { IconButton, Tooltip } from '@material-ui/core';
  
 class ThemeToggle extends React.Component {
 
@@ -44,27 +33,14 @@ class ThemeToggle extends React.Component {
     }
 
     render(){
-        const cls = sizeToClass[this.props.size]
-        const Icon = this.state.day ? ToggleOffIcon : ToggleOnIcon
-        const theme = this.state.day ? "light" : "dark"
         return (
-            <div className={styles.container}>
-                <span className={classNames(styles.name,styles[cls])}>Theme <span className={styles.theme}>({theme})</span></span>
+            <Tooltip placement="left" title="Toggle Theme">
                 <IconButton onClick={this.toggleTheme}>
-                    <Icon color="inherit" fontSize={this.props.size}/>
+                    <HighlightIcon color="inherit"/>
                 </IconButton>
-                
-            </div>
+            </Tooltip>
         )
     }
-}
-
-ThemeToggle.propTypes={
-    size: PropTypes.oneOf(['small','medium','large']).isRequired
-}
-
-ThemeToggle.defaultProps={
-    size: 'medium'
 }
 
 export default ThemeToggle
