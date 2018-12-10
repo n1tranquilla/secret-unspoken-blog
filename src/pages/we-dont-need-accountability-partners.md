@@ -11,7 +11,7 @@ In my experience, accountability partners are formed as part of men's group in a
 An accountability partner is someone with which you commit to staying open and honest about your own sexual purity. The idea is to bolster purity with a person to which you must confess should you transgress. Often these start well, but as time goes on, become less effective as partners stop reporting to each other. So what's wrong with this model?
 
 ### White knuckling
-_White knuckling_ is when you do your best to avoid the problematic behaviours without dealing with the underlying issues. It is so called because individuals must use sheer strength of will to stop. Inevevitably, when the individual's resolve weakens, they give in and act out. The model that the churches use for _accountability partners_ is flawed if only for this reason: person-to-person reporting alone is insufficient. 
+_White knuckling_ is when you do your best to avoid the problematic behaviours without dealing with the underlying issues. It is so called because individuals must use sheer strength of will to stop. Inevitably, when the individual's resolve weakens, they give in and act out. The model that the churches use for _accountability partners_ is flawed if only for this reason: person-to-person reporting alone is insufficient. 
 
 ### Shame partners
 If I had my way, I would rename _accountability partners_ to _shame partners_. This is because you develop a single-faceted relationship with your partner based on your failures. If all you do is report to someone when you fail, this person will come to represent your failure. Mostly like you will learn to avoid them, especially if they are not adept with understanding shame, and cannot help you explain and learn from your failures. 
