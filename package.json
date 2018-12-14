@@ -1,7 +1,7 @@
 {
   "name": "secret-unspoken",
   "description": "A blog discussing men's sexual health",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "Nathan Tranquilla <n1tranquilla@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^3.2.0",
