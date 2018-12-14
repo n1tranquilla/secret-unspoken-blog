@@ -7,6 +7,7 @@ import StoryEngagement from "../components/StoryEngagement"
 import PostHeader from '../components/PostHeader'
 import PostLink from "../components/PostLink"
 import AddToHomeScreen from '../components/AddToHomeScreen'
+import Helmet from 'react-helmet'
 
 export default ({ data, location, pageContext }) => {
   const siteMeta = data.site.siteMetadata
@@ -18,7 +19,11 @@ export default ({ data, location, pageContext }) => {
   }
   const { prev, next } = pageContext
   return (
-    <Layout>
+    <React.Fragment>
+      <Helmet>
+        <title>{post.frontmatter.title}</title>   
+      </Helmet>
+      <Layout>
         <AddToHomeScreen after={15000} />
         <Column>
             <PostHeader 
@@ -32,7 +37,9 @@ export default ({ data, location, pageContext }) => {
             { prev && <PostLink isNext={false} to={prev.fields.slug}>{prev.frontmatter.title}</PostLink> }
             <Disqus.DiscussionEmbed shortname={siteMeta.shortname} config={disqusConfig}/>
         </Column>
-    </Layout>
+      </Layout>
+    </React.Fragment>
+    
   )
 }
 
@@ -41,6 +48,7 @@ export const query = graphql`
     site {
       siteMetadata {
         shortname
+        title
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

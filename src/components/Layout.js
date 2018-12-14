@@ -40,8 +40,7 @@ const Layout = props => (
                     <html lang="en" />
                     <meta charset="utf-8" />
                     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-                    
-                    <title>{data.site.siteMetadata.title}</title>   
+                       
                     <meta name="Description" content={data.site.siteMetadata.description}/>
 
                     <meta name="flattr:id" content="vlp70e" />
