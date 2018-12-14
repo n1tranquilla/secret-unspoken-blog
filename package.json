@@ -1,7 +1,7 @@
 {
   "name": "secret-unspoken",
   "description": "A blog discussing men's sexual health",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "Nathan Tranquilla <n1tranquilla@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^3.2.0",
@@ -17,6 +17,7 @@
     "gatsby-plugin-manifest": "^2.0.9",
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-robots-txt": "^1.3.0",
     "gatsby-source-filesystem": "^2.0.3",
     "gatsby-transformer-remark": "^2.1.7",
     "gh-pages": "^2.0.1",
