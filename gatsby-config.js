@@ -113,15 +113,14 @@ module.exports = {
       options: {
         host: 'https://secret-unspoken.github.io',
         sitemap: 'https://secret-unspoken.github.io/rss.xml',
-        policy: [{ 
-          userAgent: '*', 
-          allow: '/',
-          disallow: '/me',
-          disallow: '/mission',
-          disallow: '/subscribe',
-          disallow: '/posts$',
-          disallow: '/posts/$',
-        }]
+        policy: [
+          { userAgent: '*', allow: '/'},
+          { userAgent: '*', disallow: '/me'},
+          { userAgent: '*', disallow: '/mission'},
+          { userAgent: '*', disallow: '/subscribe'},
+          { userAgent: '*', disallow: '/posts$'},
+          { userAgent: '*', disallow: '/posts/$'}
+        ]
       }
     }
   ],
