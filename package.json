@@ -1,7 +1,7 @@
 {
   "name": "gatsby-starter-default",
   "description": "Gatsby default starter",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^3.2.0",
