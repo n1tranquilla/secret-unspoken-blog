@@ -2,6 +2,9 @@
 title: "Moving on and getting over"
 date: "2018-11-05"
 type: "post"
+banner: "https://unsplash.com/photos/fnd1hZOuSUE"
+author: "Nathan"
+description: "The story of how I got stuck"
 ---
 For me, as with many other teenagers, middle school was a challenging time. During those years, a variety of circumstances left me feeling isolated: sickness with my dad at home, sisters who had moved out, struggling socially to connect, and an adopted style of faith that kept me at arms length from my peers. Add to that mix, a dash of puberty, and you have a recipe for vice that has taken me years to adequately address. 
 
