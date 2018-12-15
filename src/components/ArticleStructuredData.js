@@ -26,7 +26,7 @@ const ArticleStructuredData = props => {
             "name": blogName,
             "logo":{
                 "@type": "ImageObject",
-                "url": `${siteUrl}/logo.png`
+                "url": `${siteUrl}/site-logo.png`
             }
         },
         "description": description

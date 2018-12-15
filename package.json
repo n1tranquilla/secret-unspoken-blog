@@ -38,7 +38,7 @@
     "serve": "gatsby serve",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "deploy": "rm -rf .cache && rm -rf public && rm -rf node_modules/gh-pages/.cache && gatsby build && cp src/images/favicon.png /public/favicon.png && gh-pages -o target -d public -b master",
+    "deploy": "rm -rf .cache && rm -rf public && rm -rf node_modules/gh-pages/.cache && gatsby build && cp src/images/site-logo.png public/site-logo.png && gh-pages -o target -d public -b master",
     "dev-m": "gatsby develop -H 0.0.0.0 -p 8000"
   },
   "devDependencies": {
