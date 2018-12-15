@@ -2,6 +2,9 @@
 title: "Part Two: Recovery"
 date: "2018-11-12"
 type: "post"
+banner: "https://unsplash.com/photos/o8SzLhKUEBU"
+author: "Nathan"
+description: "The story of working on my recovery"
 ---
 I've been asked how I have been working on my own recovery, and I get the sense that most people are listening for a silver bullet. I think the best way to answer this is to continue the story that I have been telling. I finished the [last post](/posts/moving-on-and-getting-over/) with what I had learned coming away from [Faithful & True](https://faithfulandtrue.com/); I needed to work on the addiction directly, emotional and mental health, and on community. So how did I go about that?
 

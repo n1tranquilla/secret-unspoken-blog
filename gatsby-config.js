@@ -79,7 +79,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./src/favicon.png",
+        logo: "./src/images/favicon.png",
 
         appName: "Secret Unspoken", // Inferred with your package.json
         appDescription: null,

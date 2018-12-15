@@ -2,6 +2,9 @@
 title: "We don't need accountability partners"
 date: "2018-12-11"
 type: "post"
+banner: "https://unsplash.com/photos/PGnqT0rXWLs"
+author: "Nathan"
+description: "Why the model is flawed and what can be done about it"
 ---
 If you have ever been part of a church that focused on sexual purity, then without a doubt, you have heard of _accountability partners_. You may have even had an accountability partner, or been a part of holding others accountable. What is an _accountability partner_ exactly and what problem is it trying to solve?
 

@@ -2,6 +2,9 @@
 title: "From the other side"
 date: "2018-11-27"
 type: "post"
+banner: "https://unsplash.com/photos/CCjgYjUudxE"
+author: "Nicole"
+description: "Telling the story of addiction & recovery from the perspective of a spouse"
 ---
 
 _Guest blogging for Secret Unspoken is Nikki. Nikki is my courageous partner and adventurer in life. She has experience on the issue as an affected spouse, and will be telling her own story from discovery throughout recovery. It is my hope that her story will bring spouses into the discussion, to challenge, inspire, and bring change into the lives of couples._

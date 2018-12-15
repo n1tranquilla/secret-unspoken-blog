@@ -8,6 +8,8 @@ import PostHeader from '../components/PostHeader'
 import PostLink from "../components/PostLink"
 import AddToHomeScreen from '../components/AddToHomeScreen'
 import Helmet from 'react-helmet'
+import ArticleStructuredData from "../components/ArticleStructuredData"
+import moment from 'moment'
 
 export default ({ data, location, pageContext }) => {
   const siteMeta = data.site.siteMetadata
@@ -18,8 +20,19 @@ export default ({ data, location, pageContext }) => {
     title: post.frontmatter.title
   }
   const { prev, next } = pageContext
-  return (
+  return ( 
     <React.Fragment>
+      <ArticleStructuredData 
+        title={post.frontmatter.title}
+        slug={post.frontmatter.slug}
+        author={post.frontmatter.author}
+        imgs={[post.frontmatter.banner]}
+        description={post.frontmatter.description}
+        blogName={siteMeta.title}
+        pubDate={post.frontmatter.date}
+        modDate={post.frontmatter.date}
+        siteUrl={siteMeta.siteUrl}
+      />
       <Helmet>
         <title>{post.frontmatter.title}</title>   
       </Helmet>
@@ -28,7 +41,7 @@ export default ({ data, location, pageContext }) => {
         <Column>
             <PostHeader 
               title={post.frontmatter.title} 
-              date={post.frontmatter.date} 
+              date={moment(post.frontmatter.date).format("DD MMMM, YYYY")} 
               wordCount={post.wordCount.words}
             />
             <StoryEngagement url={location.href}/>
@@ -49,13 +62,17 @@ export const query = graphql`
       siteMetadata {
         shortname
         title
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
         title
-        date(formatString: "DD MMMM, YYYY")
+        date
+        author
+        description
+        banner
       }
       fields {
         slug
