@@ -10,6 +10,7 @@ import AddToHomeScreen from '../components/AddToHomeScreen'
 import Helmet from 'react-helmet'
 import ArticleStructuredData from "../components/ArticleStructuredData"
 import moment from 'moment'
+import BlogPostFooter from "../components/BlogPostFooter/BlogPostFooter"
 
 export default ({ data, location, pageContext }) => {
   const siteMeta = data.site.siteMetadata
@@ -48,6 +49,7 @@ export default ({ data, location, pageContext }) => {
             <div className="markdown-body" dangerouslySetInnerHTML={{ __html: post.html }} />
             { next && <PostLink isNext={true} to={next.fields.slug}>{next.frontmatter.title}</PostLink> }
             { prev && <PostLink isNext={false} to={prev.fields.slug}>{prev.frontmatter.title}</PostLink> }
+            <BlogPostFooter />
             <Disqus.DiscussionEmbed shortname={siteMeta.shortname} config={disqusConfig}/>
         </Column>
       </Layout>
